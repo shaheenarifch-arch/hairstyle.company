@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Block tracking params
+Disallow: /*?utm_*
+Disallow: /*?fbclid=*
+
+# Sitemap
+Sitemap: https://hairstyle.company/sitemap.xml
