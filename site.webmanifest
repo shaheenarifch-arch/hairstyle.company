@@ -1,0 +1,20 @@
+{
+  "name": "hairstyle.company",
+  "short_name": "hairstyle",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7f3",
+  "theme_color": "#5a2448",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,1260 @@
+{
+ "_help": "Source of truth for hairstyle.company. 'curated' = The Edit (12 hand-picked, with specs). 'store' = extra products per partner pulled from each official store. Edit, then run: node scripts/build.mjs",
+ "updated": "2026-09-29",
+ "partners": [
+  {
+   "id": "unice",
+   "name": "UNice",
+   "domain": "unice.com",
+   "mid": 39912,
+   "tagline": "Beginner-friendly glueless wigs with Bye-Bye Slip and Bye-Bye Knots lace, built for fast, secure wear.",
+   "known": "Glueless 7x5 wigs, HD lace, drawstring caps",
+   "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297",
+   "site": "https://www.unice.com"
+  },
+  {
+   "id": "zlike",
+   "name": "Zlike",
+   "domain": "zlikehair.com",
+   "mid": 102013,
+   "tagline": "High-density human hair wigs, from pre-styled bobs to pre-braided boho looks and statement colors.",
+   "known": "250-300% density, pre-styled cuts, boho braids",
+   "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+   "site": "https://www.zlikehair.com"
+  },
+  {
+   "id": "allove",
+   "name": "Allove Hair",
+   "domain": "allovehair.com",
+   "mid": 50899,
+   "tagline": "Long-length HD lace frontals and balayage highlights, with plenty of 30-inch-plus options.",
+   "known": "13x6 HD lace frontals, long lengths, highlights",
+   "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297",
+   "site": "https://www.allovehair.com"
+  },
+  {
+   "id": "jumybee",
+   "name": "Jumy Bee",
+   "domain": "jumybee.com",
+   "mid": 129553,
+   "tagline": "Formaldehyde-free keratin and Japanese 'botox' hair masks for smooth, frizz-free hair.",
+   "known": "Keratin smoothing, hair masks, after-care",
+   "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297",
+   "site": "https://jumybee.com"
+  }
+ ],
+ "curated": [
+  {
+   "id": "zlike-body-wave-balayage-highlight-transparent-lace-13x4",
+   "name": "Zlike Body Wave Balayage Highlight Transparent Lace Human Hair Wig 13x4",
+   "category": "Lace Wigs",
+   "texture": "Body Wave",
+   "lengthLabel": "16-26 inch",
+   "density": "180%",
+   "lace": "13x4 Transparent Lace",
+   "description": "100% virgin human hair balayage highlight 1B/27 color, transparent lace free part baby hair can be dyed.",
+   "features": [
+    "1B/27 balayage highlight",
+    "Virgin human hair can be dyed",
+    "Transparent lace free part"
+   ],
+   "bestFor": "Balayage highlight lovers",
+   "partner": "zlike",
+   "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+   "image": "/images/zlike-body-wave-balayage-highlight-transparent-lace-13x4.webp",
+   "imageHi": null,
+   "tags": [
+    "body-wave",
+    "colored-hair",
+    "lace-wigs"
+   ]
+  },
+  {
+   "id": "zlike-wear-go-glueless-body-wave-pre-cut-5x5",
+   "name": "Zlike Wear & Go Glueless Body Wave Pre-Cut 5x5 Lace Closure Wig",
+   "category": "Glueless Wigs",
+   "texture": "Body Wave",
+   "lengthLabel": "18-32 inch",
+   "density": "180%",
+   "lace": "5x5 Pre-Cut Transparent Lace",
+   "description": "Pre-cut bleached knots pre-plucked baby hair average cap 22.5 inch adjustable straps wear and go.",
+   "features": [
+    "Pre-cut bleached knots",
+    "Pre-plucked baby hair",
+    "Wear and go glueless"
+   ],
+   "bestFor": "Busy mornings no-glue installs",
+   "partner": "zlike",
+   "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+   "image": "/images/zlike-wear-go-glueless-body-wave-pre-cut-5x5.webp",
+   "imageHi": null,
+   "tags": [
+    "body-wave",
+    "glueless-wigs",
+    "lace-wigs"
+   ]
+  },
+  {
+   "id": "zlike-kinky-curly-lace-wig-wear-go-7x5",
+   "name": "Zlike Kinky Curly Lace Wig Wear Go 7x5 Lace Closure Human Hair",
+   "category": "Curly Hair",
+   "texture": "Kinky Curly",
+   "lengthLabel": "16-34 inch",
+   "density": "180%",
+   "lace": "7x5 Transparent Lace",
+   "description": "Fluffy kinky curly texture with natural black can be dyed, HD lace closure glueless wear go.",
+   "features": [
+    "Fluffy kinky curly",
+    "Can be dyed",
+    "HD lace closure glueless"
+   ],
+   "bestFor": "Kinky curly texture enthusiasts",
+   "partner": "zlike",
+   "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297",
+   "image": "/images/zlike-kinky-curly-lace-wig-wear-go-7x5.webp",
+   "imageHi": null,
+   "tags": [
+    "curly-hair",
+    "glueless-wigs",
+    "lace-wigs"
+   ]
+  },
+  {
+   "id": "unice-brown-ombre-burmese-curly-ready-go",
+   "name": "UNice Brown Ombre Burmese Curly Ready-to-Go Glueless Human Hair Wig",
+   "category": "Glueless Wigs",
+   "texture": "Burmese Curly Finger Coil Ends",
+   "lengthLabel": "16-28 inch",
+   "density": "150%",
+   "lace": "7x5 Bye-Bye Knots Drawstring",
+   "description": "Defined Burmese finger curls with soft bouncy ends that create natural movement, pre-bleached knots and pre-plucked hairline.",
+   "features": [
+    "Burmese finger coil ends",
+    "Pre-bleached knots",
+    "Pre-plucked hairline"
+   ],
+   "bestFor": "Natural curly movement and ready-to-go wear",
+   "partner": "unice",
+   "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297",
+   "image": "/images/unice-brown-ombre-burmese-curly-ready-go.webp",
+   "imageHi": "https://ima.unice.com/ol/media/20260513/f40a04c0526e17e6e78c761c1dc79e3f.png?im=Resize,width=700",
+   "tags": [
+    "colored-hair",
+    "curly-hair",
+    "glueless-wigs"
+   ]
+  },
+  {
+   "id": "unice-melted-hd-lace-body-wave-bye-bye-slip",
+   "name": "UNice Melted HD Lace Body Wave Bye-Bye Slip Natural Human Hair Wig",
+   "category": "HD Lace Wigs",
+   "texture": "Body Wave",
+   "lengthLabel": "14-26 inch",
+   "density": "150%",
+   "lace": "HD Lace Pre-Cut Invisible Knots",
+   "description": "Soft waves that bounce with you all day, beginner-friendly glueless cap with anti-slip design.",
+   "features": [
+    "Soft waves bounce all day",
+    "Anti-slip glueless cap",
+    "HD lace invisible knots"
+   ],
+   "bestFor": "Beginner-friendly daily body wave",
+   "partner": "unice",
+   "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297",
+   "image": "/images/unice-melted-hd-lace-body-wave-bye-bye-slip.webp",
+   "imageHi": "https://ima.unice.com/ol/media/20260712/4c202d7b2ec1994a15414bf04806e7ec.png?im=Resize,width=700",
+   "tags": [
+    "body-wave",
+    "hd-lace-wigs",
+    "lace-wigs"
+   ]
+  },
+  {
+   "id": "unice-chestnut-brown-ombre-yaki-straight-invisi-drawstring",
+   "name": "UNice Chestnut Brown Ombre Yaki Straight Wig Invisi Drawstring 7x5 & 13x4 Lace",
+   "category": "Straight Hair",
+   "texture": "Yaki Straight",
+   "lengthLabel": "10-24 inch",
+   "density": "150%",
+   "lace": "7x5 & 13x4 Pre-Bleached Knots",
+   "description": "Seamless black to chestnut brown ombre yaki straight texture with secure drawstring for all-day hold.",
+   "features": [
+    "Black to chestnut ombre",
+    "Yaki straight texture",
+    "Invisi drawstring secure"
+   ],
+   "bestFor": "Ombre yaki straight lovers",
+   "partner": "unice",
+   "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297",
+   "image": "/images/unice-chestnut-brown-ombre-yaki-straight-invisi-drawstring.webp",
+   "imageHi": null,
+   "tags": [
+    "colored-hair",
+    "glueless-wigs",
+    "lace-wigs",
+    "straight-hair"
+   ]
+  },
+  {
+   "id": "allove-p4-27-highlight-pre-cut-bleached-knots-13x4-30",
+   "name": "Allove P4/27 Highlight Pre-Cut Bleached Knots Lace Front Wig 180% Density 30",
+   "category": "Colored Hair",
+   "texture": "Body Wave Straight",
+   "lengthLabel": "16-30 inch",
+   "density": "180%",
+   "lace": "13x4 13x6",
+   "description": "100% virgin human hair pre-cut lace pre-plucked bleached knots ready to wear glueless NY warehouse.",
+   "features": [
+    "P4/27 highlight",
+    "Pre-cut bleached knots",
+    "NY warehouse ready to wear"
+   ],
+   "bestFor": "Highlight pre-cut glueless",
+   "partner": "allove",
+   "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297",
+   "image": "/images/allove-p4-27-highlight-pre-cut-bleached-knots-13x4-30.webp",
+   "imageHi": null,
+   "tags": [
+    "body-wave",
+    "colored-hair",
+    "lace-wigs",
+    "straight-hair"
+   ]
+  },
+  {
+   "id": "allove-613-blonde-straight-13x6-lace-front-glueless-30",
+   "name": "Allove 613 Blonde Straight 13x6 Lace Front Wig Glueless Body Wave Pre Plucked",
+   "category": "Blonde Hair",
+   "texture": "Straight Body Wave",
+   "lengthLabel": "16-30 inch",
+   "density": "180%",
+   "lace": "13x6 HD Lace",
+   "description": "100% virgin Brazilian human hair 613 blonde color 13x6 lace pre-plucked baby hair natural hairline.",
+   "features": [
+    "613 blonde Brazilian virgin",
+    "13x6 lace pre-plucked",
+    "Natural hairline baby hair"
+   ],
+   "bestFor": "613 blonde straight",
+   "partner": "allove",
+   "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297",
+   "image": "/images/allove-613-blonde-straight-13x6-lace-front-glueless-30.webp",
+   "imageHi": null,
+   "tags": [
+    "blonde-hair",
+    "body-wave",
+    "glueless-wigs",
+    "hd-lace-wigs",
+    "lace-wigs",
+    "straight-hair"
+   ]
+  },
+  {
+   "id": "allove-pre-cut-bleached-knots-long-wig-loose-deep-wave-30",
+   "name": "Allove Pre-Cut Bleached Knots Long Wig 13x4 Lace Front 180% Density 30 Loose Deep Wave",
+   "category": "Deep Wave",
+   "texture": "Loose Deep Wave",
+   "lengthLabel": "22-30 inch",
+   "density": "180%",
+   "lace": "13x4",
+   "description": "Long loose deep wave ready to wear 13x4 lace front pre-cut bleached knots 30 inch available.",
+   "features": [
+    "Long 30 inch available",
+    "Loose deep wave",
+    "Pre-cut bleached knots"
+   ],
+   "bestFor": "Long loose deep wave",
+   "partner": "allove",
+   "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297",
+   "image": "/images/allove-pre-cut-bleached-knots-long-wig-loose-deep-wave-30.webp",
+   "imageHi": null,
+   "tags": [
+    "deep-wave",
+    "lace-wigs"
+   ]
+  },
+  {
+   "id": "jumybee-japanese-botox-keratin-mask-250ml",
+   "name": "Jumy Bee Japanese Botox Keratin Hair Mask Deep Repair 8.4 fl oz / 250 ml",
+   "category": "Hair Care",
+   "texture": "Mask Treatment",
+   "lengthLabel": "8.4 fl oz",
+   "density": "N/A",
+   "lace": "Formaldehyde-Free",
+   "description": "Heat-activated keratin and hair btx intensive professional smoothing mask reduces frizz dryness breakage improves softness enriched keratin collagen beeswax seaweed.",
+   "features": [
+    "Heat-activated keratin btx",
+    "Reduces frizz dryness breakage",
+    "Enriched keratin collagen beeswax"
+   ],
+   "bestFor": "Deep repair smoothing mask",
+   "partner": "jumybee",
+   "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297",
+   "image": "/images/jumybee-japanese-botox-keratin-mask-250ml.webp",
+   "imageHi": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/0Z3A1435.png?width=700",
+   "tags": [
+    "hair-care"
+   ]
+  },
+  {
+   "id": "jumybee-japanese-botox-keratin-mask-500ml",
+   "name": "Jumy Bee Japanese Botox Keratin Hair Mask Deep Repair 16.9 fl oz / 500 ml",
+   "category": "Hair Care",
+   "texture": "Mask Treatment",
+   "lengthLabel": "16.9 fl oz",
+   "density": "N/A",
+   "lace": "Formaldehyde-Free",
+   "description": "Large size heat-activated keratin hair btx treatment maximum straightening results natural beeswax deep shine softness.",
+   "features": [
+    "Large 500 ml size",
+    "Maximum straightening results",
+    "Natural beeswax deep shine"
+   ],
+   "bestFor": "Large size deep repair",
+   "partner": "jumybee",
+   "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297",
+   "image": "/images/jumybee-japanese-botox-keratin-mask-500ml.webp",
+   "imageHi": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/500btx.png?width=700",
+   "tags": [
+    "hair-care"
+   ]
+  },
+  {
+   "id": "jumybee-keratin-treatment-thick-coily-hair-smoothing",
+   "name": "Jumy Bee Keratin Treatment Thick & Coily Hair Smoothing",
+   "category": "Keratin Treatment",
+   "texture": "Keratin Treatment",
+   "lengthLabel": "8.4 fl oz",
+   "density": "N/A",
+   "lace": "For Thick Coily Hair",
+   "description": "Japanese Botox and Keratin treatments work for all hair types including thick coily hair smooth shiny gorgeous.",
+   "features": [
+    "For thick coily hair",
+    "Smooth shiny gorgeous",
+    "All hair types"
+   ],
+   "bestFor": "Thick coily hair smoothing",
+   "partner": "jumybee",
+   "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297",
+   "image": "/images/jumybee-keratin-treatment-thick-coily-hair-smoothing.webp",
+   "imageHi": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/300main_0df47db3-cdcb-4fd9-be45-968c31edd5e5.jpg?width=700",
+   "tags": [
+    "hair-care"
+   ]
+  }
+ ],
+ "store": {
+  "zlike": [
+   {
+    "id": "zlike-180-density-afro-curl-wigs-4x4-pre-cut-lace-drawstring-cap-short-human-hai",
+    "partner": "zlike",
+    "name": "Zlike 180% Density Afro Curl Wigs 4x4 Pre-Cut Lace Drawstring Cap Short Human Hair Wigs",
+    "category": "Bob & Short",
+    "price": 203.8,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-180-density-afro-curl-wigs-4x4-pre-cut-lace-drawstring-cap-short-human-hair-wigs",
+    "productUrl": "https://www.zlikehair.com/products/zlike-180-density-afro-curl-wigs-4x4-pre-cut-lace-drawstring-cap-short-human-hair-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/4_dc5f9212-8d8b-4456-a395-02320d4b0b2c.jpg?width=700",
+    "tags": [
+     "bob-short-wigs",
+     "curly-hair",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-body-wave-ginger-wigs-layered-hair-side-part-redhead-13x4-lace-front-wigs",
+    "partner": "zlike",
+    "name": "Zlike Body Wave Ginger Wigs Layered Hair Side Part Redhead 13x4 Lace Front Wigs",
+    "category": "Body Wave",
+    "price": 183.56,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-body-wave-ginger-wigs-layered-hair-side-part-redhead-13x4-lace-front-wigs",
+    "productUrl": "https://www.zlikehair.com/products/zlike-body-wave-ginger-wigs-layered-hair-side-part-redhead-13x4-lace-front-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/a_3.jpg?width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-chocolate-brown-burmese-curly-13x4-lace-front-human-hair-wig-250-300-densi",
+    "partner": "zlike",
+    "name": "Zlike Chocolate Brown Burmese Curly 13x4 Lace Front Human Hair Wig 250% 300 %Density",
+    "category": "Curly",
+    "price": 158.36,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-chocolate-brown-burmese-curly-13x4-lace-front-human-hair-wig-250-300-density",
+    "productUrl": "https://www.zlikehair.com/products/zlike-chocolate-brown-burmese-curly-13x4-lace-front-human-hair-wig-250-300-density",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/3344C8B94034716A47736B8DC6BECEE5.jpg?width=700",
+    "tags": [
+     "colored-hair",
+     "curly-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "boho-braids-blonde-highlight-water-wave-human-hair-wig-6x4-5-hd-lace-glueless-pr",
+    "partner": "zlike",
+    "name": "Zlike Boho Braids Blonde Highlight Water Wave Human Hair Wig 7x5 Lace Glueless Pre-Styled Wig",
+    "category": "Deep & Water Wave",
+    "price": 139.9,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fboho-braids-blonde-highlight-water-wave-human-hair-wig-6x4-5-hd-lace-glueless-pre-styled-wig",
+    "productUrl": "https://www.zlikehair.com/products/boho-braids-blonde-highlight-water-wave-human-hair-wig-6x4-5-hd-lace-glueless-pre-styled-wig",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/4301CFC379CCBAC45FB6D62B0FE39382.jpg?width=700",
+    "tags": [
+     "blonde-hair",
+     "colored-hair",
+     "deep-wave",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-30-32-34-36-38-40-42-inch-red-brown-blonde-highlights-13x4-lace-front-huma",
+    "partner": "zlike",
+    "name": "Zlike 30 32 34 36 38 40 42 inch Red Brown Blonde Highlights 13x4 Lace Front Human Hair Wigs",
+    "category": "Blonde & Color",
+    "price": 159.84,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-30-32-34-36-38-40-42-inch-red-brown-blonde-highlights-13x4-lace-front-human-hair-wigs",
+    "productUrl": "https://www.zlikehair.com/products/zlike-30-32-34-36-38-40-42-inch-red-brown-blonde-highlights-13x4-lace-front-human-hair-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/59B4261200B93EF846B3223AEB6B1E7C.png?width=700",
+    "tags": [
+     "blonde-hair",
+     "colored-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-grey-human-hair-wigs-13x4-transparent-lace-frontal-wigs-colored-human-hair",
+    "partner": "zlike",
+    "name": "Zlike Grey Human Hair Wigs 13x4 Transparent Lace Frontal Wigs Layer Cut Human Hair Wigs For Women",
+    "category": "Blonde & Color",
+    "price": 182.11,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-grey-human-hair-wigs-13x4-transparent-lace-frontal-wigs-colored-human-hair-wigs-for-women",
+    "productUrl": "https://www.zlikehair.com/products/zlike-grey-human-hair-wigs-13x4-transparent-lace-frontal-wigs-colored-human-hair-wigs-for-women",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/1-26.jpg?width=700",
+    "tags": [
+     "colored-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-13x6-frontal-lace-braid-wig-pre-braided-glueless-human-hair-wig-with-natur",
+    "partner": "zlike",
+    "name": "Zlike 13x6 Frontal Lace Braid Wig Pre-Braided Glueless Human Hair Wig with Natural Baby Hair Full Volume",
+    "category": "Braids & Extensions",
+    "price": 201.77,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-13x6-frontal-lace-braid-wig-pre-braided-glueless-human-hair-wig-with-natural-baby-hair-full-volume",
+    "productUrl": "https://www.zlikehair.com/products/zlike-13x6-frontal-lace-braid-wig-pre-braided-glueless-human-hair-wig-with-natural-baby-hair-full-volume",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/0E079987CFBB9C5BC9885635E7AC87AD.jpg?width=700",
+    "tags": [
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-3-in-1-half-wig-180-density-kinky-straight-bob-glueless-flexi-fit-drawstri",
+    "partner": "zlike",
+    "name": "Zlike 3-In-1 Half Wig 180% Density Kinky Straight Bob Glueless Flexi-Fit Drawstring Wigs",
+    "category": "Bob & Short",
+    "price": 88.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-3-in-1-half-wig-180-density-kinky-straight-bob-glueless-flexi-fit-drawstring-wigs",
+    "productUrl": "https://www.zlikehair.com/products/zlike-3-in-1-half-wig-180-density-kinky-straight-bob-glueless-flexi-fit-drawstring-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/7d.jpg?width=700",
+    "tags": [
+     "bob-short-wigs",
+     "curly-hair",
+     "glueless-wigs",
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "zlike-ginger-highlight-body-wave-wig-360-lace-frontal-invisi-strap-snug-fit-huma",
+    "partner": "zlike",
+    "name": "Zlike Ginger Highlight Body Wave Wig 360 Lace Frontal Invisi Strap Snug Fit Human Hair Wigs",
+    "category": "Body Wave",
+    "price": 193.85,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-ginger-highlight-body-wave-wig-360-lace-frontal-invisi-strap-snug-fit-human-hair-wigs",
+    "productUrl": "https://www.zlikehair.com/products/zlike-ginger-highlight-body-wave-wig-360-lace-frontal-invisi-strap-snug-fit-human-hair-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/4_ae358b26-f1a9-424a-8fe6-4aade1294877.png?width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-natural-black-yaki-wand-curl-human-hair-wig-300-density-13x4-transparent-l",
+    "partner": "zlike",
+    "name": "Zlike Natural Black Yaki Wand Curl Human Hair Wig 300% Density 13x4 Transparent Lace Glueless Pre-Cut Lace Wig with Drawstring Cap",
+    "category": "Curly",
+    "price": 248.75,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-natural-black-yaki-wand-curl-human-hair-wig-300-density-13x4-transparent-lace-glueless-pre-cut-lace-wig-with-drawstring-cap",
+    "productUrl": "https://www.zlikehair.com/products/zlike-natural-black-yaki-wand-curl-human-hair-wig-300-density-13x4-transparent-lace-glueless-pre-cut-lace-wig-with-drawstring-cap",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/imgi_102_141a48efd6c34220a274e69c965162bf_tplv-fhlh96nyum-origin-jpeg.jpg?width=700",
+    "tags": [
+     "curly-hair",
+     "glueless-wigs",
+     "lace-wigs",
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "zlike-boho-braids-water-wave-human-hair-wig-glueless-7x5-closure-lace-wig-pre-br",
+    "partner": "zlike",
+    "name": "Zlike Boho Braids Water Wave Human Hair Wig Glueless 7x5 Closure Lace Wig Pre-Braided Pre-Cut HD Lace",
+    "category": "Deep & Water Wave",
+    "price": 119.9,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-boho-braids-water-wave-human-hair-wig-glueless-7x5-closure-lace-wig-pre-braided-pre-cut-hd-lace",
+    "productUrl": "https://www.zlikehair.com/products/zlike-boho-braids-water-wave-human-hair-wig-glueless-7x5-closure-lace-wig-pre-braided-pre-cut-hd-lace",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/40372764D50869889CCCCBB210F93F9F.png?width=700",
+    "tags": [
+     "deep-wave",
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-250-density-elegant-layered-cut-shoulder-length-loose-wavy-glueless-human-",
+    "partner": "zlike",
+    "name": "Zlike 250% Density Elegant Layered Cut Shoulder Length Loose Wavy Glueless Human Hair Wigs Full And Bouncy",
+    "category": "Body Wave",
+    "price": 197.75,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-250-density-elegant-layered-cut-shoulder-length-loose-wavy-glueless-human-hair-wigs-full-and-bouncy",
+    "productUrl": "https://www.zlikehair.com/products/zlike-250-density-elegant-layered-cut-shoulder-length-loose-wavy-glueless-human-hair-wigs-full-and-bouncy",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/Tinashe-hair-layered-loose-wave-wig-shoulder-length-5_1800x1800_91b99545-564b-4fd4-ae48-bf673e542f98.webp?width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "glueless-wigs"
+    ]
+   },
+   {
+    "id": "zlike-ready-to-go-glueless-5x5-transparent-lace-human-hair-wig-pre-styled-beginn",
+    "partner": "zlike",
+    "name": "Zlike Ready To Go Glueless 13x6 Transparent Lace Human Hair Wig Pre-Styled Beginner Friendly Wig",
+    "category": "Straight",
+    "price": 172.92,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-ready-to-go-glueless-5x5-transparent-lace-human-hair-wig-pre-styled-beginner-friendly-wig",
+    "productUrl": "https://www.zlikehair.com/products/zlike-ready-to-go-glueless-5x5-transparent-lace-human-hair-wig-pre-styled-beginner-friendly-wig",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/61b20936-00d2-4feb-b2f0-d05f4bc49c19.png?width=700",
+    "tags": [
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "zlike-13x6-lace-front-cornrow-top-braided-wig-pre-cut-glueless-human-hair-wig-na",
+    "partner": "zlike",
+    "name": "Zlike 13x6 Lace Front Cornrow Top Braided Wig Pre-Cut Glueless Human Hair Wig Natural Black",
+    "category": "Braids & Extensions",
+    "price": 201.77,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=3067297&ued=https%3A%2F%2Fwww.zlikehair.com%2Fproducts%2Fzlike-13x6-lace-front-cornrow-top-braided-wig-pre-cut-glueless-human-hair-wig-natural-black",
+    "productUrl": "https://www.zlikehair.com/products/zlike-13x6-lace-front-cornrow-top-braided-wig-pre-cut-glueless-human-hair-wig-natural-black",
+    "image": "https://cdn.shopify.com/s/files/1/0683/9179/7036/files/9264E34D9C2B52FBD4D7BB01EC6CC80D.jpg?width=700",
+    "tags": [
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   }
+  ],
+  "unice": [
+   {
+    "id": "unice-first-ever-glueless-frontal-body-wave-wig-with-pre-cut-lace-and-invisible-",
+    "partner": "unice",
+    "name": "UNice Melted HD Invisible Lace Natural-Looking Human Hair Body Wave Wig",
+    "category": "Body Wave",
+    "price": 139,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-first-ever-glueless-frontal-body-wave-wig-with-pre-cut-lace-and-invisible-knots.html",
+    "productUrl": "https://www.unice.com/unice-first-ever-glueless-frontal-body-wave-wig-with-pre-cut-lace-and-invisible-knots.html",
+    "image": "https://ima.unice.com/ol/media/20260712/4c202d7b2ec1994a15414bf04806e7ec.png?im=Resize,width=700",
+    "tags": [
+     "body-wave",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-7-x-5-bye-bye-slip-lace-black-with-golden-brown-highlights-body-wave-wig-w",
+    "partner": "unice",
+    "name": "UNice Brown Highlights Body Wave Put-On-and-Go Glueless Human Hair Wig",
+    "category": "Body Wave",
+    "price": 139,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-7-x-5-bye-bye-slip-lace-black-with-golden-brown-highlights-body-wave-wig-with-invisi-drawstring-180-density.html",
+    "productUrl": "https://www.unice.com/unice-7-x-5-bye-bye-slip-lace-black-with-golden-brown-highlights-body-wave-wig-with-invisi-drawstring-180-density.html",
+    "image": "https://ima.unice.com/ol/media/20260609/ad800f7ba664642acf51fa513b9c9725.png?im=Resize,width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "glueless-wigs"
+    ]
+   },
+   {
+    "id": "unice-13-x-4-pre-everything-lace-frontal-brown-with-honey-blonde-face-framing-hi",
+    "partner": "unice",
+    "name": "UNice Honey Blonde Pre-Styled Wavy Bob Glueless Lace Human Hair Wig",
+    "category": "Bob & Short",
+    "price": 109,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-13-x-4-pre-everything-lace-frontal-brown-with-honey-blonde-face-framing-highlights-wavy-bob-drawstring-wig.html",
+    "productUrl": "https://www.unice.com/unice-13-x-4-pre-everything-lace-frontal-brown-with-honey-blonde-face-framing-highlights-wavy-bob-drawstring-wig.html",
+    "image": "https://ima.unice.com/ol/media/20260311/b2981665611627ac77d8e658f7e2e287.jpg?im=Resize,width=700",
+    "tags": [
+     "blonde-hair",
+     "bob-short-wigs",
+     "body-wave",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-7-x-5-lace-black-to-chestnut-brown-ombre-curly-wig-with-defi",
+    "partner": "unice",
+    "name": "UNice Brown Ombre Burmese Curly Ready-to-Go Glueless Human Hair Wig",
+    "category": "Curly",
+    "price": 159,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-7-x-5-lace-black-to-chestnut-brown-ombre-curly-wig-with-defined-finger-coil-ends-drawstring-wig.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-7-x-5-lace-black-to-chestnut-brown-ombre-curly-wig-with-defined-finger-coil-ends-drawstring-wig.html",
+    "image": "https://ima.unice.com/ol/media/20260513/f40a04c0526e17e6e78c761c1dc79e3f.png?im=Resize,width=700",
+    "tags": [
+     "colored-hair",
+     "curly-hair",
+     "glueless-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-7-x-5-lace-water-wave-wig-with-twist-out-ends",
+    "partner": "unice",
+    "name": "UNice Burmese Curly Glueless Lace Put-On-and-Go Human Hair Wig",
+    "category": "Curly",
+    "price": 129,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-7-x-5-lace-water-wave-wig-with-twist-out-ends.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-7-x-5-lace-water-wave-wig-with-twist-out-ends.html",
+    "image": "https://ima.unice.com/ol/media/20260919/8c81fb7c0057e95f36247b0a96d30a39.jpg?im=Resize,width=700",
+    "tags": [
+     "curly-hair",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7x5-glueless-lace-reddish-brown-curly-wig-with-bleached-",
+    "partner": "unice",
+    "name": "UNice Reddish Brown Curly Glueless Ready-to-Wear Human Hair Wig",
+    "category": "Curly",
+    "price": 89,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7x5-glueless-lace-reddish-brown-curly-wig-with-bleached-knots.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7x5-glueless-lace-reddish-brown-curly-wig-with-bleached-knots.html",
+    "image": "https://ima.unice.com/ol/media/20260706/1573d5111b49bb60ce1a967bd91c2617.png?im=Resize,width=700",
+    "tags": [
+     "colored-hair",
+     "curly-hair",
+     "glueless-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7x5-glueless-lace-black-yaki-wig-with-bleached-knots",
+    "partner": "unice",
+    "name": "UNice Yaki Straight Secure Glueless Natural-Looking Human Hair Wig",
+    "category": "Straight",
+    "price": 119,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7x5-glueless-lace-black-yaki-wig-with-bleached-knots.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7x5-glueless-lace-black-yaki-wig-with-bleached-knots.html",
+    "image": "https://ima.unice.com/ol/media/20260402/de87742bd328a02ec8e89a9388f5ee14.png?im=Resize,width=700",
+    "tags": [
+     "glueless-wigs",
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7x5-glueless-lace-black-yaki-bob-bleached-knots-wig-180-",
+    "partner": "unice",
+    "name": "UNice Yaki Bob No-Slip Glueless Lace Lightweight Human Hair Wig for Beginners",
+    "category": "Bob & Short",
+    "price": 99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7x5-glueless-lace-black-yaki-bob-bleached-knots-wig-180-density.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7x5-glueless-lace-black-yaki-bob-bleached-knots-wig-180-density.html",
+    "image": "https://ima.unice.com/ol/media/20260906/c466d81f200f9e7969d440fbb62725c1.png?im=Resize,width=700",
+    "tags": [
+     "bob-short-wigs",
+     "glueless-wigs",
+     "lace-wigs",
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "unice-easi-contour-v-part-glueless-yaki-wig",
+    "partner": "unice",
+    "name": "UNice Yaki Straight 180% Density V Part Human Hair Wig",
+    "category": "Straight",
+    "price": 105,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-easi-contour-v-part-glueless-yaki-wig.html",
+    "productUrl": "https://www.unice.com/unice-easi-contour-v-part-glueless-yaki-wig.html",
+    "image": "https://ima.unice.com/ol/media/20251112/76d50d2d04c6fb90c98069e1601bbbbb.png?im=Resize,width=700",
+    "tags": [
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "unice-13-x-4-pre-everything-lace-frontal-natural-black-water-wave-curly-wig",
+    "partner": "unice",
+    "name": "UNice Pre-Everything Lace Front Black Curly Glueless Drawstring Wig",
+    "category": "Deep & Water Wave",
+    "price": 99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-13-x-4-pre-everything-lace-frontal-natural-black-water-wave-curly-wig.html",
+    "productUrl": "https://www.unice.com/unice-13-x-4-pre-everything-lace-frontal-natural-black-water-wave-curly-wig.html",
+    "image": "https://ima.unice.com/ol/media/20250828/4b42385ff04b23b203ec7fdd24e4dc06.jpg?im=Resize,width=700",
+    "tags": [
+     "curly-hair",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7x5-quick-glueless-lace-water-wave-invisible-knots-wig",
+    "partner": "unice",
+    "name": "UNice Water Wave No-Slip Glueless Lace Easy-to-Wear Human Hair Wig",
+    "category": "Deep & Water Wave",
+    "price": 139,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7x5-quick-glueless-lace-water-wave-invisible-knots-wig.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7x5-quick-glueless-lace-water-wave-invisible-knots-wig.html",
+    "image": "https://ima.unice.com/ol/media/20250919/cc6d3865f155df69fa31d982106ed96e.jpg?im=Resize,width=700",
+    "tags": [
+     "deep-wave",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-13-x-4-ear-to-ear-lace-frontal-water-wave-wig-pre-everything-wig",
+    "partner": "unice",
+    "name": "UNice Water Wave No-Slip Glueless Lace Front Human Hair Wig with Drawstring",
+    "category": "Deep & Water Wave",
+    "price": 129,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-13-x-4-ear-to-ear-lace-frontal-water-wave-wig-pre-everything-wig.html",
+    "productUrl": "https://www.unice.com/unice-13-x-4-ear-to-ear-lace-frontal-water-wave-wig-pre-everything-wig.html",
+    "image": "https://ima.unice.com/ol/media/20251107/27dbf5ea0e76bdadd88a160bfcd618e4.jpg?im=Resize,width=700",
+    "tags": [
+     "deep-wave",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7-x-5-glueless-lace-balayage-highlight-body-wave-wig",
+    "partner": "unice",
+    "name": "UNice Brown Highlights Body Wave Glueless Put-On-and-Go Human Hair Wig",
+    "category": "Blonde & Color",
+    "price": 109,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7-x-5-glueless-lace-balayage-highlight-body-wave-wig.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7-x-5-glueless-lace-balayage-highlight-body-wave-wig.html",
+    "image": "https://ima.unice.com/ol/media/20260402/d2cf35efa864a33c2831b9740491ad20.png?im=Resize,width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "glueless-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7x5-glueless-lace-honey-blonde-body-wave-wig-with-bleach",
+    "partner": "unice",
+    "name": "UNice Honey Blonde Body Wave Glueless Lace Front Human Hair Wig",
+    "category": "Blonde & Color",
+    "price": 129,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7x5-glueless-lace-honey-blonde-body-wave-wig-with-bleached-clean-knots.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7x5-glueless-lace-honey-blonde-body-wave-wig-with-bleached-clean-knots.html",
+    "image": "https://ima.unice.com/ol/media/20240516/72732d8e29c3ecae33fb562adffb60e5.png?im=Resize,width=700",
+    "tags": [
+     "blonde-hair",
+     "body-wave",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-bye-bye-knots-wig-7-x-5-lace-loose-wave-butterscotch-highlights-brown-wig",
+    "partner": "unice",
+    "name": "UNice Bye-Bye Knots Loose Wave Wig in Brown with Butterscotch Highlights",
+    "category": "Blonde & Color",
+    "price": 139,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-bye-bye-knots-wig-7-x-5-lace-loose-wave-butterscotch-highlights-brown-wig.html",
+    "productUrl": "https://www.unice.com/unice-bye-bye-knots-wig-7-x-5-lace-loose-wave-butterscotch-highlights-brown-wig.html",
+    "image": "https://ima.unice.com/ol/media/20250820/871079f1e452ebeb3f400ea8ad8755de.jpg?im=Resize,width=700",
+    "tags": [
+     "blonde-hair",
+     "colored-hair",
+     "deep-wave"
+    ]
+   },
+   {
+    "id": "unice-13x4-pre-everything-lace-frontal-613-blonde-glueless-bob-wig-for-summer",
+    "partner": "unice",
+    "name": "UNice 13x4 Pre-Everything Lace Frontal 613 Blonde Glueless Bob Wig",
+    "category": "Bob & Short",
+    "price": 109,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-13x4-pre-everything-lace-frontal-613-blonde-glueless-bob-wig-for-summer.html",
+    "productUrl": "https://www.unice.com/unice-13x4-pre-everything-lace-frontal-613-blonde-glueless-bob-wig-for-summer.html",
+    "image": "https://ima.unice.com/ol/media/20260611/d4fe90cd03cebd6f9a99a1d37105ee7f.jpg?im=Resize,width=700",
+    "tags": [
+     "blonde-hair",
+     "bob-short-wigs",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "unice-full-lace-100-handmade-blond-body-wave-straight-pre-plucked-human-hair-wig",
+    "partner": "unice",
+    "name": "UNice 100% Handmade Invisible Full Lace Blonde Body Wave Human Hair Wig",
+    "category": "Blonde & Color",
+    "price": 145,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=3067297&ued=https%3A%2F%2Fwww.unice.com%2Funice-full-lace-100-handmade-blond-body-wave-straight-pre-plucked-human-hair-wigs.html",
+    "productUrl": "https://www.unice.com/unice-full-lace-100-handmade-blond-body-wave-straight-pre-plucked-human-hair-wigs.html",
+    "image": "https://ima.unice.com/ol/media/20260128/9217bc1de1c82bb0c17a61e9239c4872.jpg?im=Resize,width=700",
+    "tags": [
+     "blonde-hair",
+     "body-wave",
+     "lace-wigs"
+    ]
+   }
+  ],
+  "allove": [
+   {
+    "id": "pre-braided-hd-lace-frontal-wig-straight-hairstyle-ready-to-go-wigs",
+    "partner": "allove",
+    "name": "Pre-Everything Glueless 13x4 13x6 HD Lace Frontal Wig, Pre-Braided Straight, Ready to Go",
+    "category": "Straight",
+    "price": 158.28,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2Fpre-braided-hd-lace-frontal-wig-straight-hairstyle-ready-to-go-wigs",
+    "productUrl": "https://www.allovehair.com/products/pre-braided-hd-lace-frontal-wig-straight-hairstyle-ready-to-go-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/straighthair_25deea4a-e0f4-498c-bb50-4fc98e7803ef.jpg?width=700",
+    "tags": [
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs",
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "pre-braided-deep-wave-wig-13x4-13x6-full-hd-lace-frontal-wig",
+    "partner": "allove",
+    "name": "250% Density Pre-Braided Deep Wave Wig 13x4 13x6 Full HD Lace Frontal, Glueless",
+    "category": "Deep & Water Wave",
+    "price": 158.28,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2Fpre-braided-deep-wave-wig-13x4-13x6-full-hd-lace-frontal-wig",
+    "productUrl": "https://www.allovehair.com/products/pre-braided-deep-wave-wig-13x4-13x6-full-hd-lace-frontal-wig",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/deepwavehair_84766d1b-1be9-463c-ac32-dd9d9e644fdd.jpg?width=700",
+    "tags": [
+     "deep-wave",
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "300-density-luxury-custom-wigs-glueless-13x4-13x6-full-lace-front-curly-wigs",
+    "partner": "allove",
+    "name": "300% Density Luxury Glueless Full Lace Front Curly Wig, 30-32 Inch",
+    "category": "Curly",
+    "price": 140.49,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F300-density-luxury-custom-wigs-glueless-13x4-13x6-full-lace-front-curly-wigs",
+    "productUrl": "https://www.allovehair.com/products/300-density-luxury-custom-wigs-glueless-13x4-13x6-full-lace-front-curly-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/curlywig.jpg?width=700",
+    "tags": [
+     "curly-hair",
+     "glueless-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "300-density-raw-vietnamese-double-drawn-human-hair-bob-wig",
+    "partner": "allove",
+    "name": "300% Density Raw Vietnamese Double Drawn Bob Wig, Ombre Brown 5x5 HD Lace",
+    "category": "Bob & Short",
+    "price": 215.38,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F300-density-raw-vietnamese-double-drawn-human-hair-bob-wig",
+    "productUrl": "https://www.allovehair.com/products/300-density-raw-vietnamese-double-drawn-human-hair-bob-wig",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/bobwigs_62f8fbb5-c937-4feb-a767-7ef21da38251.jpg?width=700",
+    "tags": [
+     "bob-short-wigs",
+     "colored-hair",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "30-inch-body-wave-hd-lace-front-wigs-human-hair-pre-plucked-glueless-wigs",
+    "partner": "allove",
+    "name": "Body Wave 5x5 13x4 HD Lace Front Wig, Pre-Plucked Glueless, up to 40 Inch",
+    "category": "Body Wave",
+    "price": 147.21,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F30-inch-body-wave-hd-lace-front-wigs-human-hair-pre-plucked-glueless-wigs",
+    "productUrl": "https://www.allovehair.com/products/30-inch-body-wave-hd-lace-front-wigs-human-hair-pre-plucked-glueless-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/body_wave_hair_3d27c1a6-f6b7-4c68-a5cc-bd1bbe14937f.jpg?width=700",
+    "tags": [
+     "body-wave",
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "allove-200-density-brunette-blonde-highlights-loose-body-wig-13x6-full-lace-fron",
+    "partner": "allove",
+    "name": "Allove Brunette Blonde Highlights Loose Body Wave 13x6 Full Lace Front Wig",
+    "category": "Blonde & Color",
+    "price": 120.18,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2Fallove-200-density-brunette-blonde-highlights-loose-body-wig-13x6-full-lace-front-human-wig",
+    "productUrl": "https://www.allovehair.com/products/allove-200-density-brunette-blonde-highlights-loose-body-wig-13x6-full-lace-front-human-wig",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/Allove200_DensityBrunetteBlondeHighlightsLooseBodyWig13x613X4FullLaceFrontHumanWigs_4.jpg?width=700",
+    "tags": [
+     "blonde-hair",
+     "body-wave",
+     "colored-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "250-density-real-hd-13x6-lace-frontal-wig-loose-deep-human-hair",
+    "partner": "allove",
+    "name": "250% Density Real HD 13x6 Lace Frontal Loose Deep Wave Wig, 30 Inch",
+    "category": "Deep & Water Wave",
+    "price": 131.89,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F250-density-real-hd-13x6-lace-frontal-wig-loose-deep-human-hair",
+    "productUrl": "https://www.allovehair.com/products/250-density-real-hd-13x6-lace-frontal-wig-loose-deep-human-hair",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/loosedeepwavehair_d7132936-b34a-42b7-9ed2-07a54f3a7a46.jpg?width=700",
+    "tags": [
+     "deep-wave",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "32-inch-long-straight-human-hair-wigs-250-density-lace-wigs",
+    "partner": "allove",
+    "name": "Glueless 5x5 HD Lace Long Straight Wig, 250% Density, 30-32 Inch",
+    "category": "Straight",
+    "price": 147.21,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F32-inch-long-straight-human-hair-wigs-250-density-lace-wigs",
+    "productUrl": "https://www.allovehair.com/products/32-inch-long-straight-human-hair-wigs-250-density-lace-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/human_hair_a009b9dc-1727-4ef0-8bb1-74618da77dbb.jpg?width=700",
+    "tags": [
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs",
+     "straight-hair"
+    ]
+   },
+   {
+    "id": "side-part-pre-braided-water-wave-13x4-13x6-hd-lace-frontal-ready-to-go-wigs",
+    "partner": "allove",
+    "name": "Side Part Pre-Braided Water Wave 13x4 13x6 HD Lace Frontal Ready-to-Go Wig",
+    "category": "Deep & Water Wave",
+    "price": 158.28,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2Fside-part-pre-braided-water-wave-13x4-13x6-hd-lace-frontal-ready-to-go-wigs",
+    "productUrl": "https://www.allovehair.com/products/side-part-pre-braided-water-wave-13x4-13x6-hd-lace-frontal-ready-to-go-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/hairstyle_e1f9ba6a-0dd8-4749-ac26-e9eceae710c5.jpg?width=700",
+    "tags": [
+     "deep-wave",
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "p4-27-kinky-curly-feather-crochet-human-hair-highlight-boho-braids",
+    "partner": "allove",
+    "name": "P4/27 Kinky Curly Feather Crochet Human Hair for Boho Braids",
+    "category": "Braids & Extensions",
+    "price": 76.01,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2Fp4-27-kinky-curly-feather-crochet-human-hair-highlight-boho-braids",
+    "productUrl": "https://www.allovehair.com/products/p4-27-kinky-curly-feather-crochet-human-hair-highlight-boho-braids",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/crochet_hair_1c30000e-099a-429f-9757-aa581f6b29f3.jpg?width=700",
+    "tags": [
+     "colored-hair",
+     "curly-hair"
+    ]
+   },
+   {
+    "id": "brown-with-blonde-highlight-body-wave-lace-front-wigs-human-hair",
+    "partner": "allove",
+    "name": "Brown with Blonde Highlight Short Body Wave Lace Front Wig, 200% Density",
+    "category": "Bob & Short",
+    "price": 145.72,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2Fbrown-with-blonde-highlight-body-wave-lace-front-wigs-human-hair",
+    "productUrl": "https://www.allovehair.com/products/brown-with-blonde-highlight-body-wave-lace-front-wigs-human-hair",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/colored_wigs_aeb80400-f33e-491c-b8ea-5d8b1d7f58ff.jpg?width=700",
+    "tags": [
+     "blonde-hair",
+     "bob-short-wigs",
+     "body-wave",
+     "colored-hair",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "200-density-glueless-balayage-highlight-with-skunk-stripe-body-wave-wig",
+    "partner": "allove",
+    "name": "Glueless Balayage Skunk Stripe Body Wave Wig, Money Piece Highlight HD Lace",
+    "category": "Blonde & Color",
+    "price": 159.47,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F200-density-glueless-balayage-highlight-with-skunk-stripe-body-wave-wig",
+    "productUrl": "https://www.allovehair.com/products/200-density-glueless-balayage-highlight-with-skunk-stripe-body-wave-wig",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/colored_wigs_ddcc23a1-e9df-4803-8dcf-4a6d59b0cc67.jpg?width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "350-density-balayage-highlight-wigs-salon-quality-bouncy-wavy-13x4-hd-lace-wigs",
+    "partner": "allove",
+    "name": "350% Density Balayage Highlight Bouncy Wavy 13x4 HD Lace Wig",
+    "category": "Blonde & Color",
+    "price": 156.17,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F350-density-balayage-highlight-wigs-salon-quality-bouncy-wavy-13x4-hd-lace-wigs",
+    "productUrl": "https://www.allovehair.com/products/350-density-balayage-highlight-wigs-salon-quality-bouncy-wavy-13x4-hd-lace-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/highlightwigs_ca2e04e8-49fa-41c0-9bf2-c0fb8b278f09.jpg?width=700",
+    "tags": [
+     "body-wave",
+     "colored-hair",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   },
+   {
+    "id": "13x4-hd-lace-wigs-no-glue-200-density-human-hair-wigs",
+    "partner": "allove",
+    "name": "100% Glueless Wear & Go Pre-Cut 13x4/13x6 HD Lace Body Wave Wig",
+    "category": "Body Wave",
+    "price": 145.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=50899&awinaffid=3067297&ued=https%3A%2F%2Fwww.allovehair.com%2Fproducts%2F13x4-hd-lace-wigs-no-glue-200-density-human-hair-wigs",
+    "productUrl": "https://www.allovehair.com/products/13x4-hd-lace-wigs-no-glue-200-density-human-hair-wigs",
+    "image": "https://cdn.shopify.com/s/files/1/0030/6839/5633/files/bodywavehair_97ae521d-0b10-4db1-8ceb-96fe955b223f.jpg?width=700",
+    "tags": [
+     "body-wave",
+     "glueless-wigs",
+     "hd-lace-wigs",
+     "lace-wigs"
+    ]
+   }
+  ],
+  "jumybee": [
+   {
+    "id": "japanese-botox-keratin-hair-mask-deep-repair-anti-frizz-treatment-8-4-fl-oz-250-",
+    "partner": "jumybee",
+    "name": "Japanese Botox Keratin Hair Mask, Deep Repair & Anti-Frizz (8.4 fl oz / 250 ml)",
+    "category": "Masks & Treatments",
+    "price": 24.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjapanese-botox-keratin-hair-mask-deep-repair-anti-frizz-treatment-8-4-fl-oz-250-ml",
+    "productUrl": "https://jumybee.com/products/japanese-botox-keratin-hair-mask-deep-repair-anti-frizz-treatment-8-4-fl-oz-250-ml",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/0Z3A1435.png?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "japanese-botox-keratin-hair-mask-deep-repair-anti-frizz-treatment-16-9-fl-oz-500",
+    "partner": "jumybee",
+    "name": "Japanese Botox Keratin Hair Mask, Deep Repair & Anti-Frizz (16.9 fl oz / 500 ml)",
+    "category": "Masks & Treatments",
+    "price": 37.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjapanese-botox-keratin-hair-mask-deep-repair-anti-frizz-treatment-16-9-fl-oz-500-ml",
+    "productUrl": "https://jumybee.com/products/japanese-botox-keratin-hair-mask-deep-repair-anti-frizz-treatment-16-9-fl-oz-500-ml",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/500btx.png?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "hydrating-keratin-hair-mask-for-dry-damaged-hair-8-8-fl-oz",
+    "partner": "jumybee",
+    "name": "Hydrating Keratin Hair Mask for Dry & Damaged Hair (8.8 fl oz)",
+    "category": "Masks & Treatments",
+    "price": 16.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fhydrating-keratin-hair-mask-for-dry-damaged-hair-8-8-fl-oz",
+    "productUrl": "https://jumybee.com/products/hydrating-keratin-hair-mask-for-dry-damaged-hair-8-8-fl-oz",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/250_cd00aab8-9e41-4df0-915a-72499fc8dd48.png?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-one-step-hair-keratin-smoothing-mask-keratin-coconut-rose-60-ml-2-03-oz",
+    "partner": "jumybee",
+    "name": "One-Step Keratin Smoothing Mask, Keratin + Coconut & Rose (60 ml)",
+    "category": "Masks & Treatments",
+    "price": 16.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-one-step-hair-keratin-smoothing-mask-keratin-coconut-rose-60-ml-2-03-oz",
+    "productUrl": "https://jumybee.com/products/jumy-bee-one-step-hair-keratin-smoothing-mask-keratin-coconut-rose-60-ml-2-03-oz",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/0Z3A1405.png?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-3-step-keratin-hair-treatment-set-for-coarse-coily-hair-3x8-4-fl-oz-250",
+    "partner": "jumybee",
+    "name": "3-Step Keratin Treatment Set for Coarse & Coily Hair (3 x 250 ml)",
+    "category": "Keratin Treatments",
+    "price": 35.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-3-step-keratin-hair-treatment-set-for-coarse-coily-hair-3x8-4-fl-oz-250-m",
+    "productUrl": "https://jumybee.com/products/jumy-bee-3-step-keratin-hair-treatment-set-for-coarse-coily-hair-3x8-4-fl-oz-250-m",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/300main_0df47db3-cdcb-4fd9-be45-968c31edd5e5.jpg?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-3-step-keratin-hair-treatment-set-for-coarse-coily-hair-3-2-03-oz",
+    "partner": "jumybee",
+    "name": "3-Step Keratin Treatment Set for Coarse & Coily Hair, Travel Size (3 x 60 ml)",
+    "category": "Keratin Treatments",
+    "price": 17.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-3-step-keratin-hair-treatment-set-for-coarse-coily-hair-3-2-03-oz",
+    "productUrl": "https://jumybee.com/products/jumy-bee-3-step-keratin-hair-treatment-set-for-coarse-coily-hair-3-2-03-oz",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/Main.jpg?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-tanino-keratin-treatment-tannin-hair-smoothing-tanino-fusion-8-4-fl-oz-",
+    "partner": "jumybee",
+    "name": "Tanino Keratin Treatment, Tannin Hair Smoothing (300 ml)",
+    "category": "Keratin Treatments",
+    "price": 29.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-tanino-keratin-treatment-tannin-hair-smoothing-tanino-fusion-8-4-fl-oz-250-m",
+    "productUrl": "https://jumybee.com/products/jumy-bee-tanino-keratin-treatment-tannin-hair-smoothing-tanino-fusion-8-4-fl-oz-250-m",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/Tanino300main.jpg?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-tanino-keratin-treatment-tannin-hair-smoothing-tanino-fusion-2-03-oz-60",
+    "partner": "jumybee",
+    "name": "Tanino Keratin Treatment, Tannin Hair Smoothing (60 ml)",
+    "category": "Keratin Treatments",
+    "price": 16.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-tanino-keratin-treatment-tannin-hair-smoothing-tanino-fusion-2-03-oz-60-ml",
+    "productUrl": "https://jumybee.com/products/jumy-bee-tanino-keratin-treatment-tannin-hair-smoothing-tanino-fusion-2-03-oz-60-ml",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/0Z3A1389.png?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "after-care-anti-frizz-shampoo-and-conditioner-set-16-9-fl-oz-each",
+    "partner": "jumybee",
+    "name": "After-Care Anti-Frizz Shampoo & Conditioner Set (16.9 fl oz each)",
+    "category": "Shampoo & Care",
+    "price": 34.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fafter-care-anti-frizz-shampoo-and-conditioner-set-16-9-fl-oz-each",
+    "productUrl": "https://jumybee.com/products/after-care-anti-frizz-shampoo-and-conditioner-set-16-9-fl-oz-each",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/Set.png?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-mini-flat-iron-hair-straightener-6-5-inch-travel-size",
+    "partner": "jumybee",
+    "name": "Mini Flat Iron Hair Straightener, 6.5 Inch Travel Size",
+    "category": "Hair Tools",
+    "price": 16.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-mini-flat-iron-hair-straightener-6-5-inch-travel-size",
+    "productUrl": "https://jumybee.com/products/jumy-bee-mini-flat-iron-hair-straightener-6-5-inch-travel-size",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/61dSZhDG-oL.jpg?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-vented-blow-dry-brush-curved-detangling-hair-brush",
+    "partner": "jumybee",
+    "name": "Vented Blow Dry Brush, Curved Detangling Hair Brush",
+    "category": "Hair Tools",
+    "price": 15.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-vented-blow-dry-brush-curved-detangling-hair-brush",
+    "productUrl": "https://jumybee.com/products/jumy-bee-vented-blow-dry-brush-curved-detangling-hair-brush",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/51wgg_M0n5L.jpg?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   },
+   {
+    "id": "jumy-bee-3-in-1-hair-dye-brush-and-comb-with-tail",
+    "partner": "jumybee",
+    "name": "3-in-1 Hair Dye Brush and Comb with Tail",
+    "category": "Hair Tools",
+    "price": 13.99,
+    "currency": "USD",
+    "url": "https://www.awin1.com/cread.php?awinmid=129553&awinaffid=3067297&ued=https%3A%2F%2Fjumybee.com%2Fproducts%2Fjumy-bee-3-in-1-hair-dye-brush-and-comb-with-tail",
+    "productUrl": "https://jumybee.com/products/jumy-bee-3-in-1-hair-dye-brush-and-comb-with-tail",
+    "image": "https://cdn.shopify.com/s/files/1/0887/9249/8481/files/61DkySxAkaL.jpg?width=700",
+    "tags": [
+     "hair-care"
+    ]
+   }
+  ]
+ }
+}

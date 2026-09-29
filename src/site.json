@@ -1,0 +1,20 @@
+{
+  "name": "hairstyle.company",
+  "url": "https://hairstyle.company",
+  "description": "A curated edit of human hair wigs and hair care from UNice, Zlike, Allove Hair and Jumy Bee. Glueless, HD lace and every texture, explained simply.",
+  "email": "hello@hairstyle.company",
+  "newsletter": {
+    "_help": "Paste a form action URL from Mailchimp, Klaviyo, Buttondown, Brevo or Formspree. Empty = email fallback.",
+    "action": "",
+    "emailField": "email",
+    "method": "post"
+  },
+  "social": {
+    "_help": "Replace with your real profile URLs. Remove a line to hide that icon.",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "pinterest": "https://www.pinterest.com/",
+    "youtube": "https://www.youtube.com/",
+    "facebook": "https://www.facebook.com/"
+  }
+}
