@@ -90,7 +90,6 @@ ${preload}
 function header(active = '') {
   return `<body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="announce">Official-store wigs & hair care from 4 trusted brands · <a href="/affiliate-disclosure.html">How we earn</a></div>
 <header class="site-header"><div class="container header-inner">
   <a class="brand" href="/" aria-label="${site.name} home">${mark}<span>hairstyle<i>.company</i></span></a>
   <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" data-menu-btn>${ic.menu}</button>
@@ -106,10 +105,10 @@ function newsletter() {
   return `<section class="section" id="newsletter" aria-labelledby="nl-t"><div class="container"><div class="newsletter">
   <div><span class="eyebrow" style="color:#e9b8a8">The Hair Letter</span><h2 id="nl-t">New drops, <em style="color:#f3c9bd">real</em> deals, zero spam.</h2><p>One email a month with new arrivals, brand sales and our latest how-tos.</p></div>
   <div>
-    <form class="nl-form" action="${esc(n.action || 'mailto:' + site.email)}" method="${n.method || 'post'}" data-newsletter data-fallback="${esc(site.email)}"${n.action ? ' target="_blank"' : ''}>
+    <form class="nl-form" action="${esc(n.action || 'mailto:' + site.email)}" method="${n.method || 'post'}" data-newsletter data-fallback="${esc(site.email)}">${Object.entries(n.hidden || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join('')}
       <label class="sr-only" for="nl-email">Email address</label>
       <input id="nl-email" type="email" name="${esc(n.emailField || 'email')}" placeholder="you@example.com" autocomplete="email" required>
-      <div class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+      <div class="hp" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
       <button class="btn btn-light" type="submit">${ic.mail} Subscribe</button>
     </form>
     <p class="nl-note">By subscribing you agree to our <a href="/privacy.html">privacy policy</a>. Unsubscribe anytime.</p>
@@ -125,6 +124,7 @@ function footer() {
     <div class="footer-about"><a class="brand" href="/">${mark}<span>hairstyle<i>.company</i></span></a>
       <p style="margin-top:14px;max-width:40ch">${esc(site.description)}</p>
       <div class="social" aria-label="Follow us">${soc.map(([k, v]) => `<a href="${esc(v)}" target="_blank" rel="noopener me" aria-label="${socialName[k]}">${socialIc[k]}</a>`).join('')}</div>
+      <p class="footer-contact"><a href="mailto:${esc(site.email)}">${esc(site.email)}</a><a href="tel:${esc(site.phoneTel || '')}">${esc(site.phone || '')}</a></p>
     </div>
     <div><h4>Shop wigs</h4><ul>${collections.filter((c) => c.slug !== 'hair-care').slice(0, 7).map((c) => `<li><a href="/collections/${c.slug}.html">${esc(c.title)}</a></li>`).join('')}</ul></div>
     <div><h4>Brands & care</h4><ul>${data.partners.map((p) => `<li><a href="/brands/${p.id}.html">${esc(p.name)}</a></li>`).join('')}<li><a href="/collections/hair-care.html">Hair care</a></li></ul></div>
@@ -163,7 +163,8 @@ function carousel(items, label, id) {
 </div>`;
 }
 const guideCard = (g) => `<a class="post" href="${g.path}"><div class="post-media"><img src="${esc(ref(g.img))}" alt="" width="440" height="300" loading="lazy" decoding="async"></div><div class="post-body"><span class="post-meta">${esc(g.category)} · ${g.readMins} min</span><h3>${esc(g.title)}</h3><p>${esc(g.description)}</p></div></a>`;
-const crumbs = (l) => `<nav class="crumbs" aria-label="Breadcrumb"><ol>${l.map(([h, t], i) => `<li>${i < l.length - 1 ? `<a href="${h}">${esc(t)}</a>` : `<span aria-current="page">${esc(t)}</span>`}</li>`).join('')}</ol></nav>`;
+const backLink = (l) => l.length > 1 ? `<a class="back-link" href="${l[l.length - 2][0]}" onclick="if(document.referrer&&document.referrer.indexOf(location.host)>-1&&history.length>1){history.back();return false}"><span aria-hidden="true">&larr;</span> Back</a>` : '';
+const crumbs = (l) => backLink(l) + `<nav class="crumbs" aria-label="Breadcrumb"><ol>${l.map(([h, t], i) => `<li>${i < l.length - 1 ? `<a href="${h}">${esc(t)}</a>` : `<span aria-current="page">${esc(t)}</span>`}</li>`).join('')}</ol></nav>`;
 const faqBlock = (f, h = 'Questions, answered') => `<div class="faq"><h2 class="center" style="margin-bottom:18px">${h}</h2>${f.map((x, i) => `<details${i === 0 ? ' open' : ''}><summary>${esc(x.q)}</summary><div class="answer"><p>${x.a}</p></div></details>`).join('')}</div>`;
 const itemList = (name, items) => ({ '@type': 'ItemList', name, numberOfItems: items.length, itemListElement: items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: p.kind === 'curated' ? abs(p.page) : p.productUrl })) });
 
@@ -173,7 +174,7 @@ function home() {
   const texTiles = ['body-wave', 'curly-hair', 'straight-hair', 'deep-wave', 'bob-short-wigs', 'blonde-hair'].map((s) => collections.find((c) => c.slug === s));
   const words = ['HD Lace', 'Glueless', 'Wear & Go', 'Pre-Plucked', 'Bleached Knots', '100% Human Hair', 'Keratin Care', 'Body Wave', 'Kinky Curly', 'Honey Blonde'];
   return head({
-    title: 'hairstyle.company | Human Hair Wigs, Glueless & HD Lace, Curated',
+    title: 'hairstyle | Human Hair Wigs, Glueless & HD Lace, Curated',
     description: 'Shop a curated edit of glueless, HD lace and human hair wigs plus keratin hair care from UNice, Zlike, Allove Hair and Jumy Bee. Specs explained, official stores only.',
     canonical: '/', image: h[0],
     preload: `<link rel="preload" as="image" href="${esc(h[0])}" fetchpriority="high">`,

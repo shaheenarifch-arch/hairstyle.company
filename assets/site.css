@@ -296,3 +296,9 @@ p{margin:0 0 1em}
 .to-top.show{opacity:1;visibility:visible}.to-top svg{width:20px;height:20px}
 .center{text-align:center}
 [hidden]{display:none!important}
+
+/* footer contact + back link */
+.footer-contact{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:14px;font-size:.9rem}
+.footer-contact a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.back-link{display:inline-flex;align-items:center;gap:6px;margin:0 0 10px;font-size:.9rem;font-weight:600;color:inherit;text-decoration:none;opacity:.85}
+.back-link:hover{opacity:1;text-decoration:underline}

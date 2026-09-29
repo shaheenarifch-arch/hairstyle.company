@@ -4,10 +4,16 @@
   "description": "A curated edit of human hair wigs and hair care from UNice, Zlike, Allove Hair and Jumy Bee. Glueless, HD lace and every texture, explained simply.",
   "email": "agents@getservices.ai",
   "newsletter": {
-    "_help": "Paste a form action URL from Mailchimp, Klaviyo, Buttondown, Brevo or Formspree. Empty = email fallback.",
-    "action": "",
+    "_help": "Free FormSubmit form: signups are emailed to agents@getservices.ai. The first signup triggers a one-time activation email.",
+    "action": "https://formsubmit.co/agents@getservices.ai",
     "emailField": "email",
-    "method": "post"
+    "method": "post",
+    "hidden": {
+      "_subject": "hairstyle.company - New newsletter signup",
+      "_next": "https://hairstyle.company/",
+      "_captcha": "true",
+      "_template": "table"
+    }
   },
   "social": {
     "_help": "Replace with your real profile URLs. Remove a line to hide that icon.",
@@ -16,5 +22,7 @@
     "pinterest": "https://www.pinterest.com/",
     "youtube": "https://www.youtube.com/",
     "facebook": "https://www.facebook.com/"
-  }
+  },
+  "phone": "313-729-1534",
+  "phoneTel": "+13137291534"
 }
