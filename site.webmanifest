@@ -3,8 +3,8 @@
   "short_name": "hairstyle",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fbf7f3",
-  "theme_color": "#5a2448",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
   "icons": [
     {
       "src": "/favicon.svg",
