@@ -1,14 +1,20 @@
 User-agent: *
 Allow: /
-
-# Disallow private areas
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-
-# Block tracking params
 Disallow: /*?utm_*
 Disallow: /*?fbclid=*
 
-# Sitemap
+# AI answer engines welcome
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://hairstyle.company/sitemap.xml
