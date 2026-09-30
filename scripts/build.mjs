@@ -208,15 +208,15 @@ function home() {
 </div></section>
 
 <section class="section tint" id="the-edit" aria-labelledby="edit-t"><div class="container">
-  <div class="section-head"><div><span class="eyebrow">The Edit</span><h2 id="edit-t">Twelve pieces we'd <em>actually</em> wear</h2><p>Our shortlist across four brands: specs checked, beginner-friendly features first.</p></div></div>
-  ${carousel(curated.map((p, i) => card(p, { eager: i < 2 })), 'The Edit', 'car-edit')}
+  <div class="section-head"><div><span class="eyebrow">The Edit</span><h2 id="edit-t">Twenty pieces we'd <em>actually</em> wear</h2><p>Our shortlist across four brands: twelve spec-checked favourites plus eight more from the official stores.</p></div></div>
+  ${carousel([...curated, ...mixBrands(store, 20 - curated.length)].map((p, i) => card(p, { eager: i < 2 })), 'The Edit', 'car-edit')}
 </div></section>
 
 <section class="section" id="brands" aria-labelledby="brands-t"><div class="container">
   <div class="section-head"><div><span class="eyebrow">Shop by brand</span><h2 id="brands-t">Four official stores, <em>one</em> edit</h2></div><a class="link-arrow" href="/brands/">Compare brands ${ic.arrow}</a></div>
   ${data.partners.map((b) => `<div class="brand-band" id="brand-${b.id}">
     <div class="band-head"><div><h3>${esc(b.name)}</h3><p>${esc(b.tagline)}</p></div><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-ghost btn-sm" href="/brands/${b.id}.html">View all ${byBrand(b.id).length}</a><a class="btn btn-primary btn-sm" href="${esc(b.url)}" target="_blank" rel="sponsored noopener">Visit ${esc(b.name)} ${ic.ext}</a></div></div>
-    ${carousel(mix(byBrand(b.id), 10).map((p) => card(p)), b.name, 'car-' + b.id)}
+    ${carousel(mix(byBrand(b.id), 20).map((p) => card(p)), b.name, 'car-' + b.id)}
   </div>`).join('')}
 </div></section>
 
@@ -295,7 +295,8 @@ function brandPage(b) {
   <div class="hero-cta" style="margin:24px 0 0"><a class="btn btn-primary" href="${esc(b.url)}" target="_blank" rel="sponsored noopener">Shop ${esc(b.name)} ${ic.ext}</a></div>
   <ul class="pill-nav">${Object.keys(cats).map((c) => `<li><a href="#${c.toLowerCase().replace(/[^a-z0-9]+/g, '-')}">${esc(c)} (${cats[c].length})</a></li>`).join('')}</ul>
 </div></header>
-${Object.entries(cats).map(([c, ps], i) => `<section class="section${i % 2 ? ' tint' : ''}" id="${c.toLowerCase().replace(/[^a-z0-9]+/g, '-')}" style="padding:48px 0"><div class="container"><div class="section-head" style="margin-bottom:8px"><div><h2 style="font-size:2rem">${esc(c)}</h2></div></div>${carousel(ps.map((p) => card(p)), c, `car-${b.id}-${i}`)}</div></section>`).join('')}
+<section class="section" style="padding:48px 0"><div class="container"><div class="section-head" style="margin-bottom:8px"><div><h2 style="font-size:2rem">All ${esc(b.name)} picks</h2></div></div>${carousel(mix(items, 20).map((p) => card(p)), b.name, `car-${b.id}-all`)}</div></section>
+${Object.entries(cats).map(([c, ps], i) => `<section class="section${i % 2 ? '' : ' tint'}" id="${c.toLowerCase().replace(/[^a-z0-9]+/g, '-')}" style="padding:48px 0"><div class="container"><div class="section-head" style="margin-bottom:8px"><div><h2 style="font-size:2rem">${esc(c)}</h2></div></div><div class="grid">${ps.map((p) => card(p)).join('')}</div></div></section>`).join('')}
 ${newsletter()}
 </main>` + footer();
 }
@@ -322,7 +323,8 @@ function productPage(p) {
   const b = P[p.partner];
   const list = [['/', 'Home'], [`/brands/${b.id}.html`, b.name], [p.page, p.name]];
   const col = collections.find((c) => p.tags.includes(c.slug)) || collections[0];
-  const similar = mixBrands(all.filter((x) => x !== p && x.tags.some((t) => p.tags.includes(t) && t !== 'lace-wigs')), 12);
+  const simBase = mixBrands(all.filter((x) => x !== p && x.tags.some((t) => p.tags.includes(t) && t !== 'lace-wigs')), 20);
+  const similar = [...simBase, ...all.filter((x) => x !== p && !simBase.includes(x) && (x.partner === p.partner || (p.partner !== 'jumybee' && x.partner !== 'jumybee')))].slice(0, 20);
   const faqs = [
     { q: p.partner === 'jumybee' ? 'How often should I use it?' : 'Is this wig beginner friendly?', a: p.partner === 'jumybee' ? 'Follow the directions on the pack. Masks are typically used weekly or every few washes, and keratin treatments last several weeks. Do a strand test first.' : /glueless|wear|go|pre-cut|drawstring/i.test(p.name + p.lace + p.description) ? 'Yes. It has beginner-friendly features such as a glueless or wear-and-go design and pre-cut or pre-plucked lace, so it can be worn without adhesive.' : 'It suits most wearers. If it\'s your first lace wig, compare it with our <a href="/collections/glueless-wigs.html">glueless picks</a>.' },
     { q: 'Where can I buy it?', a: `It's sold by ${b.name} on its official store, ${b.domain}. Use the Shop button to see today's price, colors and lengths.` },
