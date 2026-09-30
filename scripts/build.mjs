@@ -126,9 +126,9 @@ function footer() {
       <div class="social" aria-label="Follow us">${soc.map(([k, v]) => `<a href="${esc(v)}" target="_blank" rel="noopener me" aria-label="${socialName[k]}">${socialIc[k]}</a>`).join('')}</div>
       <p class="footer-contact"><a href="mailto:${esc(site.email)}">${esc(site.email)}</a><a href="tel:${esc(site.phoneTel || '')}">${esc(site.phone || '')}</a></p>
     </div>
-    <div><h4>Shop wigs</h4><ul>${collections.filter((c) => c.slug !== 'hair-care').slice(0, 7).map((c) => `<li><a href="/collections/${c.slug}.html">${esc(c.title)}</a></li>`).join('')}</ul></div>
-    <div><h4>Brands & care</h4><ul>${data.partners.map((p) => `<li><a href="/brands/${p.id}.html">${esc(p.name)}</a></li>`).join('')}<li><a href="/collections/hair-care.html">Hair care</a></li></ul></div>
-    <div><h4>Learn</h4><ul>${guides.slice(0, 4).map((g) => `<li><a href="${g.path}">${esc(g.short)}</a></li>`).join('')}<li><a href="/about.html">About</a></li><li><a href="/affiliate-disclosure.html">Affiliate disclosure</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+    <div><h3>Shop wigs</h3><ul>${collections.filter((c) => c.slug !== 'hair-care').slice(0, 7).map((c) => `<li><a href="/collections/${c.slug}.html">${esc(c.title)}</a></li>`).join('')}</ul></div>
+    <div><h3>Brands & care</h3><ul>${data.partners.map((p) => `<li><a href="/brands/${p.id}.html">${esc(p.name)}</a></li>`).join('')}<li><a href="/collections/hair-care.html">Hair care</a></li></ul></div>
+    <div><h3>Learn</h3><ul>${guides.slice(0, 4).map((g) => `<li><a href="${g.path}">${esc(g.short)}</a></li>`).join('')}<li><a href="/about.html">About</a></li><li><a href="/affiliate-disclosure.html">Affiliate disclosure</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
   </div>
   <div class="container footer-bottom"><span>© <span data-year>${new Date().getFullYear()}</span> ${site.name}</span><p>All products are sold by official brand stores. As an affiliate partner we may earn a commission on purchases made through our links, at no extra cost to you. Prices are starting prices and may change.</p></div>
 </footer>
@@ -273,7 +273,7 @@ function collectionPage(c) {
 </div></header>
 <section class="section" style="padding-top:36px"><div class="container">
   ${brands.length > 1 ? `<div class="pill-nav" data-filter="grid" role="group" aria-label="Filter by brand" style="margin:0 0 14px"><button type="button" data-brand="all" aria-pressed="true">All brands</button>${brands.map((b) => `<button type="button" data-brand="${b}" aria-pressed="false">${esc(P[b].name)}</button>`).join('')}</div>` : ''}
-  <p class="count" data-count>${items.length} styles</p>
+  <h2 class="sr-only">${esc(c.title)} products</h2><p class="count" data-count>${items.length} styles</p>
   <div class="grid" id="grid">${items.map((p) => card(p)).join('')}</div>
 </div></section>
 <section class="section tint"><div class="container"><div class="section-head"><div><span class="eyebrow">Helpful reads</span><h2>Before you buy</h2></div></div>${carousel(related.map(guideCard), 'Guides', 'car-g')}</div></section>
@@ -364,7 +364,7 @@ function guidePage(g) {
   <article class="prose"><div class="quick"><strong>Quick answer</strong><p>${g.quick}</p></div>${g.body}
     <section style="margin-top:40px">${faqBlock(g.faqs, 'FAQs').replace('class="center" ', '')}</section>
   </article>
-  <aside><div class="aside"><h4>On this page</h4><ol class="toc">${toc.map((m) => `<li><a href="#${m[1]}">${m[2]}</a></li>`).join('')}</ol><h4 style="margin-top:20px">Shop the look</h4>${recs.map((p) => `<a class="mini" href="${esc(p.kind === 'curated' ? p.page : p.url)}"${p.kind === 'curated' ? '' : ' target="_blank" rel="sponsored noopener"'}><img src="${esc(p.img)}" alt="" width="58" height="70" loading="lazy"><span><small>${esc(P[p.partner].name)}</small>${esc(p.name.length > 60 ? p.name.slice(0, 57) + '…' : p.name)}</span></a>`).join('')}</div></aside>
+  <aside><div class="aside"><h2 class="aside-h">On this page</h2><ol class="toc">${toc.map((m) => `<li><a href="#${m[1]}">${m[2]}</a></li>`).join('')}</ol><h2 class="aside-h" style="margin-top:20px">Shop the look</h2>${recs.map((p) => `<a class="mini" href="${esc(p.kind === 'curated' ? p.page : p.url)}"${p.kind === 'curated' ? '' : ' target="_blank" rel="sponsored noopener"'}><img src="${esc(p.img)}" alt="" width="58" height="70" loading="lazy"><span><small>${esc(P[p.partner].name)}</small>${esc(p.name.length > 60 ? p.name.slice(0, 57) + '…' : p.name)}</span></a>`).join('')}</div></aside>
 </div>
 <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Keep reading</span><h2>More <em>guides</em></h2></div></div>${carousel(guides.filter((x) => x !== g).map(guideCard), 'More guides', 'car-more')}</div></section>
 ${newsletter()}
@@ -375,7 +375,7 @@ function guidesIndex() {
   const list = [['/', 'Home'], ['/guides/', 'Guides']];
   return head({ title: `Wig Guides: Lace, Glueless, Density & Care | ${site.name}`, description: 'Plain-English wig guides: HD vs transparent lace, glueless wigs for beginners, density and length, wig care and choosing a style for your face shape.', canonical: '/guides/', schema: [crumbSchema(list)] }) + header('Guides') + `
 <main id="main"><header class="page-hero"><div class="container">${crumbs(list)}<h1>The <em>journal</em></h1><p class="lead">Everything you need to choose, wear and care for a wig, explained simply.</p></div></header>
-<section class="section" style="padding-top:36px"><div class="container">${carousel(guides.map(guideCard), 'Guides', 'car-all')}</div></section>
+<section class="section" style="padding-top:36px"><div class="container"><h2 class="sr-only">All guides</h2>${carousel(guides.map(guideCard), 'Guides', 'car-all')}</div></section>
 <section class="section tint"><div class="container"><div class="section-head"><div><span class="eyebrow">Shop</span><h2>The <em>Edit</em></h2></div></div>${carousel(curated.map((p) => card(p)), 'The Edit', 'car-e')}</div></section>
 ${newsletter()}</main>` + footer();
 }
