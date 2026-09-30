@@ -107,10 +107,10 @@ function newsletter() {
   return `<section class="section" id="newsletter" aria-labelledby="nl-t"><div class="container"><div class="newsletter">
   <div><span class="eyebrow" style="color:#e9b8a8">The Hair Letter</span><h2 id="nl-t">New drops, <em style="color:#f3c9bd">real</em> deals, zero spam.</h2><p>One email a month with new arrivals, brand sales and our latest how-tos.</p></div>
   <div>
-    <form class="nl-form" action="${esc(n.action || 'mailto:' + site.email)}" method="${n.method || 'post'}" data-newsletter data-fallback="${esc(site.email)}">${Object.entries(n.hidden || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join('')}
+    <form class="nl-form" action="${esc(n.action || 'mailto:' + site.email)}" method="${n.method || 'post'}" data-newsletter data-ajax data-fallback="${esc(site.email)}">${Object.entries(n.hidden || {}).map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`).join('')}
       <label class="sr-only" for="nl-email">Email address</label>
       <input id="nl-email" type="email" name="${esc(n.emailField || 'email')}" placeholder="you@example.com" autocomplete="email" required>
-      <div class="hp" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+      <div class="hp" aria-hidden="true"><input type="text" name="botcheck" tabindex="-1" autocomplete="off"></div>
       <button class="btn btn-light" type="submit">${ic.mail} Subscribe</button>
     </form>
     <p class="nl-note">By subscribing you agree to our <a href="/privacy.html">privacy policy</a>. Unsubscribe anytime.</p>
