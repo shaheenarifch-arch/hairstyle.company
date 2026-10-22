@@ -48,4 +48,5 @@
 
   <url><loc>https://hairstyle.company/contact.html</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://hairstyle.company/terms.html</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://hairstyle.company/promos.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>
