@@ -316,3 +316,6 @@ p{margin:0 0 1em}
 .amz-note{margin-top:18px;color:#6b5a62}
 @media (max-width:900px){.amz-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.amz-grid{grid-template-columns:1fr}}
+.amz-img{display:block;margin:-22px -22px 16px;aspect-ratio:4/3;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--blush)}
+.amz-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.amz:hover .amz-img img{transform:scale(1.04)}
