@@ -15,6 +15,7 @@ const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const write = (p, s) => { const f = path.join(ROOT, p); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, s); };
 const site = JSON.parse(read('src/site.json'));
 const data = JSON.parse(read('data/partners.json'));
+const amazon = fs.existsSync(path.join(ROOT, 'data/amazon.json')) ? JSON.parse(read('data/amazon.json')) : null;
 const { collections, guides, homeFaqs, pages } = await import(pathToFileURL(path.join(ROOT, 'src/content.mjs')).href);
 const V = new Date().toISOString().slice(0, 10);
 
@@ -170,6 +171,27 @@ const crumbs = (l) => backLink(l) + `<nav class="crumbs" aria-label="Breadcrumb"
 const faqBlock = (f, h = 'Questions, answered') => `<div class="faq"><h2 class="center" style="margin-bottom:18px">${h}</h2>${f.map((x, i) => `<details${i === 0 ? ' open' : ''}><summary>${esc(x.q)}</summary><div class="answer"><p>${x.a}</p></div></details>`).join('')}</div>`;
 const itemList = (name, items) => ({ '@type': 'ItemList', name, numberOfItems: items.length, itemListElement: items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: p.kind === 'curated' ? abs(p.page) : p.productUrl })) });
 
+// ---------- Amazon picks (data/amazon.json) ----------
+const amzIc = {
+  stand: I('<circle cx="12" cy="6.5" r="3.5"/><path d="M12 10v8M8 21h8M10 18h4"/>'),
+  bonnet: I('<path d="M4 15a8 8 0 0 1 16 0"/><path d="M3 15h18M7 15v2.5M17 15v2.5"/>'),
+  cap: I('<path d="M5 14a7 7 0 0 1 14 0v2H5z"/><path d="M5 16c2 1.5 12 1.5 14 0"/>'),
+  glue: I('<path d="M9 3h6v4H9zM8 7h8l1 14H7z"/><path d="M12 11v5"/>'),
+  tint: I('<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>'),
+  wash: I('<path d="M9 2h6v3H9zM7 5h10v16H7z"/><path d="M10 11h4M10 14h4"/>'),
+  heat: I('<path d="M12 2c2 3 4 5 4 9a4 4 0 0 1-8 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 0-8z"/><path d="M6 21h12"/>'),
+  brush: I('<rect x="4" y="3" width="8" height="10" rx="3"/><path d="M8 13v8M6 6h4M6 9h4"/>'),
+};
+const amzUrl = (x) => x.url || `https://www.amazon.com/s?k=${encodeURIComponent(x.query).replace(/%20/g, '+')}&tag=${encodeURIComponent(amazon.tag)}`;
+function amazonSection() {
+  if (!amazon?.picks?.length) return '';
+  return `<section class="section" id="amazon-picks" aria-labelledby="amz-t"><div class="container">
+  <div class="section-head"><div><span class="eyebrow">Wig-day essentials</span><h2 id="amz-t">The <em>little</em> extras, on Amazon</h2><p>Stands, bonnets, caps and care tools that make any wig last longer. These are everyday accessories from Amazon, not our brand partners, so compare reviews and delivery times before you buy.</p></div></div>
+  <div class="amz-grid">${amazon.picks.map((x) => `<a class="amz" href="${esc(amzUrl(x))}" target="_blank" rel="sponsored nofollow noopener" aria-label="Browse ${esc(x.name)} on Amazon (opens in a new tab)">${x.image ? `<span class="amz-img"><img src="${esc(x.image)}?w=480&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=70" alt="${esc(x.alt || x.name)}" width="480" height="360" loading="lazy" decoding="async"></span>` : `<span class="ic">${amzIc[x.icon] || ic.sparkle}</span>`}<h3>${esc(x.name)}</h3><p>${esc(x.blurb)}</p><span class="amz-cta">Browse on Amazon ${ic.ext}</span></a>`).join('')}</div>
+  <p class="amz-note"><small>${esc(amazon.disclosure)} Prices and availability are set by Amazon sellers and may change. Photos are illustrative, via <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a>. New to wigs? Read <a href="/guides/glueless-wigs-for-beginners.html">our beginner's guide</a> first, and see our <a href="/affiliate-disclosure.html">affiliate disclosure</a>.</small></p>
+</div></section>`;
+}
+
 // ---------- pages ----------
 function home() {
   const h = [ref('unice-2'), ref('unice-4'), ref('unice-14')];
@@ -240,6 +262,7 @@ function home() {
   <div class="section-head"><div><span class="eyebrow">Hair care</span><h2 id="care-t">Smooth, <em>frizz-free</em> care</h2><p>Keratin smoothing and Japanese botox-style masks from Jumy Bee, plus the tools to keep every look fresh.</p></div><a class="link-arrow" href="/collections/hair-care.html">All hair care ${ic.arrow}</a></div>
   ${carousel(byTag('hair-care').map((p) => card(p)), 'Hair care', 'car-care')}
 </div></section>
+${amazonSection()}
 
 <section class="section tint" aria-labelledby="why-t"><div class="container">
   <div class="section-head"><div><span class="eyebrow">Why shop here</span><h2 id="why-t">Less guesswork, <em>better</em> hair days</h2></div></div>

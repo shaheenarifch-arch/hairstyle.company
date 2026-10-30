@@ -230,6 +230,8 @@ export const pages = (site) => [
 <p>${site.name} participates in affiliate programmes, including the Awin network. When you click a brand link and make a purchase, we may earn a commission. <strong>This never increases your price.</strong></p>
 <h2>Which links are affiliate links?</h2>
 <p>Links to UNice, Zlike, Allove Hair and Jumy Bee (including "Shop" buttons, product cards and brand pages) are usually affiliate links and are marked <code>rel="sponsored"</code> for search engines.</p>
+<h2>Amazon Associates</h2>
+<p>${site.name} is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate I earn from qualifying purchases. Links in our "Wig-day essentials" section and "Also on Amazon" links in articles go to Amazon and are marked <code>rel="sponsored"</code>.</p>
 <h2>Prices</h2>
 <p>Prices shown are starting prices listed by each brand when we last updated the site. Brands change prices and run promotions often, so always check the final price at checkout.</p>
 <p>This disclosure follows the U.S. FTC's guidance on endorsements. Questions? Email <a href="mailto:${site.email}">${site.email}</a>.</p>`,
