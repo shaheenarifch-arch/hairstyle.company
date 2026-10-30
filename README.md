@@ -11,6 +11,7 @@ node scripts/build.mjs
 | What | Where |
 |---|---|
 | Brands, The Edit (12 curated), store products, affiliate links | `data/partners.json` |
+| Amazon picks on the home page (tag `get786-20`) | `data/amazon.json` (help text inside) |
 | Site name, email, newsletter form URL, social links | `src/site.json` |
 | Guides, FAQs, collections, About/Disclosure/Privacy | `src/content.mjs` |
 | Theme and scripts | `src/site.css`, `src/site.js` |
