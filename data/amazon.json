@@ -1,0 +1,15 @@
+{
+  "_help": "Amazon Associates picks for the home page 'Wig-day essentials on Amazon' section. Every link is built as https://www.amazon.com/s?k=<query>&tag=<tag>, so the tag below is added automatically. To change a tile, edit its name, blurb or query (the Amazon search words). To add one, copy a tile and pick an icon: stand, bonnet, cap, glue, tint, wash, heat, brush. To link one exact product instead of a search, add \"url\" with your SiteStripe link (it must already contain tag=get786-20). Do not add prices or copied product photos: Amazon only allows those from its own tools (SiteStripe / Product Advertising API). Rebuild with: node scripts/build.mjs. Rules: https://affiliate-program.amazon.com/help/operating/agreement",
+  "tag": "get786-20",
+  "disclosure": "As an Amazon Associate I earn from qualifying purchases.",
+  "picks": [
+    { "name": "Wig stands & mannequin heads", "icon": "stand", "query": "wig stand mannequin head", "blurb": "Keep your unit's shape and lace safe between wears, and style it hands-free." },
+    { "name": "Satin bonnets & pillowcases", "icon": "bonnet", "query": "satin bonnet silk pillowcase hair", "blurb": "Less friction overnight means less frizz, tangles and shedding." },
+    { "name": "Wig caps", "icon": "cap", "query": "wig caps stocking nude", "blurb": "Flatten braids or natural hair for a smoother, more secure install." },
+    { "name": "Lace glue & melt spray", "icon": "glue", "query": "lace wig glue melting spray", "blurb": "For frontal installs that need extra hold and a flatter, melted hairline." },
+    { "name": "Lace tint", "icon": "tint", "query": "lace tint spray for wigs", "blurb": "Match lace to your scalp tone so the hairline disappears." },
+    { "name": "Wig shampoo & conditioner", "icon": "wash", "query": "wig shampoo conditioner human hair", "blurb": "Sulfate-free cleansing that keeps human hair units soft for longer." },
+    { "name": "Heat protectant spray", "icon": "heat", "query": "heat protectant spray for wigs", "blurb": "Shield the hair before you curl, straighten or blow-dry." },
+    { "name": "Wig brushes & edge tools", "icon": "brush", "query": "wig brush wide tooth comb edge brush", "blurb": "Detangle gently and lay baby hairs without pulling at the lace." }
+  ]
+}
