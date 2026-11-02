@@ -61,5 +61,19 @@
     "google_quality_passed": true,
     "eeat_score": 100,
     "seo_aeo_score": 9.55
+  },
+  {
+    "keyword": "how to maintain drawstring wigs without damaging hair",
+    "title": "How to Maintain Drawstring Wigs Without Damaging Hair",
+    "description": "Learn how to maintain drawstring wigs without damaging hair, with washing, styling, storage, and protection steps for healthier natural strands.",
+    "file": "how-to-maintain-drawstring-wigs-without-damaging-hair.html",
+    "date": "2026-11-02",
+    "archetype": "how_to",
+    "archetype_confidence": 0.67,
+    "risk_level": "low",
+    "requires_human_review": false,
+    "google_quality_passed": true,
+    "eeat_score": 100,
+    "seo_aeo_score": 9.4
   }
 ]
