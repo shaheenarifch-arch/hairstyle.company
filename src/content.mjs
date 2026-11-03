@@ -238,14 +238,31 @@ export const pages = (site) => [
   },
   {
     file: 'privacy.html', title: 'Privacy Policy', h1: 'Privacy policy',
-    description: `How ${site.name} handles your information.`,
+    description: `How ${site.name} handles information: newsletter sign-ups, messages, affiliate cookies, third-party links and your privacy rights.`,
     body: `
-<p><em>Last updated: ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</em></p>
+<p><em>Last updated: November 2, 2026</em></p>
+<p>This policy explains what information ${site.name} ("we", "us") collects when you use hairstyle.company, how we use it and the choices you have.</p>
 <h2>Information we collect</h2>
-<p>You don't need an account to use this site. If you join our newsletter, we store your email address with our email provider only to send you the newsletter.</p>
-<h2>Affiliate cookies</h2>
-<p>When you click a brand link, the affiliate network (such as Awin) and the brand may set cookies to record the referral. Their own privacy policies apply.</p>
-<h2>Your choices</h2>
-<ul><li>Unsubscribe from any newsletter using the link in the email.</li><li>Block or clear cookies in your browser settings.</li><li>Email <a href="mailto:${site.email}">${site.email}</a> about your data.</li></ul>`,
+<ul><li><strong>Newsletter:</strong> if you subscribe using the email form on this site, we collect your email address and the page you signed up from. We use it only to send you The Hair Letter (new arrivals, brand sales and how-tos). Every email includes an unsubscribe link.</li>
+<li><strong>Messages:</strong> if you email or call us, we receive your contact details and whatever you choose to tell us.</li>
+<li><strong>Technical information:</strong> this site is hosted on GitHub Pages. Like most web hosts, GitHub may log technical data such as IP addresses for security and operations.</li>
+<li><strong>No accounts or payments:</strong> you do not need an account to use this site, and we never collect payment details. Purchases happen on the official brand stores and on Amazon.</li></ul>
+<h2>How we use information</h2>
+<ul><li>To send the newsletter to people who subscribed.</li><li>To reply to your messages and requests.</li><li>To correct or improve our content and keep the site working and secure.</li><li>To comply with legal obligations.</li></ul>
+<p>We do not sell or rent personal information.</p>
+<h2>Cookies and affiliate links</h2>
+<p>Many links on this site are affiliate links, through the Awin affiliate network and the Amazon Associates program. When you click one, you leave our site. The affiliate network, the brand or Amazon may set cookies or use similar technologies to record that you came from us and to process your order. Their own privacy policies apply to that data. We do not run advertising or analytics trackers of our own on this site.</p>
+<h2>Third-party content and links</h2>
+<p>Product images and links come from the official stores of UNice, Zlike, Allove Hair, Jumy Bee and other partners, and some photos come from Unsplash, so your browser may load them directly from those providers. We are not responsible for the privacy practices of other websites, so please read their policies before sharing personal information.</p>
+<h2>Children</h2>
+<p>This site is intended for adults and is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has sent us information, contact us and we will delete it.</p>
+<h2>Your choices and rights</h2>
+<p>Depending on where you live, including under the California Consumer Privacy Act (CCPA/CPRA), you may have the right to know what personal information we hold about you, to ask us to correct or delete it, and to opt out of the sale or sharing of personal information. We do not sell personal information.</p>
+<ul><li>Unsubscribe from the newsletter at any time using the link in any email.</li><li>Block or clear cookies in your browser settings.</li><li>Email <a href="mailto:${site.email}">${site.email}</a> to make a request. We will respond within a reasonable time.</li></ul>
+<h2>Contact</h2>
+<p>Questions about this policy? Email <a href="mailto:${site.email}">${site.email}</a> or visit our <a href="/contact.html">contact page</a>.</p>
+<h2>Changes</h2>
+<p>We may update this policy and will change the date at the top when we do.</p>
+`,
   },
 ];

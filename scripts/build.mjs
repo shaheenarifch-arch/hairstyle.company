@@ -233,6 +233,7 @@ function home() {
       <ul class="hero-points"><li>Glueless & wear-and-go</li><li>100% human hair</li><li>Official stores only</li></ul>
       <div class="actions"><a class="btn" href="#the-edit">Shop the Edit${from ? ` from ${from}` : ''}</a><a class="btn alt" href="/guides/glueless-wigs-for-beginners.html">New to wigs? Start here</a></div>
       <p class="hero-note">Prices and availability are set by the brand and may change.</p>
+      <p class="hero-note">Affiliate disclosure: we may earn a commission when you buy through our links, at no extra cost to you. <a href="/affiliate-disclosure.html">Learn more</a>.</p>
     </div>
     <a class="hero-product" href="/collections/glueless-wigs.html"><img src="${esc(h[0])}" alt="Model wearing a glueless body wave human hair wig" width="700" height="875" fetchpriority="high" decoding="async"><span class="hero-tag"><b>Glueless HD lace wigs</b>Pre-cut, pre-plucked, on in 5 min</span></a>
   </div>
