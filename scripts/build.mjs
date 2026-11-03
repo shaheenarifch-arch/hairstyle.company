@@ -17,6 +17,7 @@ const site = JSON.parse(read('src/site.json'));
 const data = JSON.parse(read('data/partners.json'));
 const amazon = fs.existsSync(path.join(ROOT, 'data/amazon.json')) ? JSON.parse(read('data/amazon.json')) : null;
 const { collections, guides, homeFaqs, pages } = await import(pathToFileURL(path.join(ROOT, 'src/content.mjs')).href);
+const { holidayWig } = await import(pathToFileURL(path.join(ROOT, 'src/holiday-wig-gift-guide.mjs')).href);
 const V = new Date().toISOString().slice(0, 10);
 
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -231,7 +232,7 @@ function home() {
       <h1>Hair That Feels Like You, Only Easier</h1>
       <p>Glueless human hair wigs, melt-ready HD lace and salon-grade keratin care, hand-picked from four official brand stores and explained without the jargon.</p>
       <ul class="hero-points"><li>Glueless & wear-and-go</li><li>100% human hair</li><li>Official stores only</li></ul>
-      <div class="actions"><a class="btn" href="#the-edit">Shop the Edit${from ? ` from ${from}` : ''}</a><a class="btn alt" href="/guides/glueless-wigs-for-beginners.html">New to wigs? Start here</a></div>
+      <div class="actions"><a class="btn" href="#the-edit">Shop the Edit${from ? ` from ${from}` : ''}</a><a class="btn alt" href="/guides/glueless-wigs-for-beginners.html">New to wigs? Start here</a><a class="btn alt" href="/holiday-wig-gift-guide.html">Holiday gift guide</a></div>
       <p class="hero-note">Prices and availability are set by the brand and may change.</p>
       <p class="hero-note">Affiliate disclosure: we may earn a commission when you buy through our links, at no extra cost to you. <a href="/affiliate-disclosure.html">Learn more</a>.</p>
     </div>
@@ -419,6 +420,40 @@ function simple(pg) {
 <main id="main"><header class="page-hero"><div class="wrap">${crumbs(list)}<h1>${esc(pg.h1)}</h1></div></header><div class="wrap"><div class="legal prose">${pg.body}</div></div>${newsletter()}</main>` + footer();
 }
 
+// ---------- holiday money page (/holiday-wig-gift-guide.html) ----------
+// Added Nov 2026. The committed HTML for this page was written directly (this script is out of sync with the other committed pages).
+function holidayPage(g = holidayWig) {
+  const pick = (key) => { const [pid, i] = key.split('-'); const p = data.store[pid]?.[+i]; if (!p || !p.price) throw new Error('holiday guide: no priced store item for ' + key); return { ...p, kind: 'store', img: p.image }; };
+  const rel = ' target="_blank" rel="sponsored nofollow noopener"';
+  const list = [['/', 'Home'], ['/guides/', 'Guides'], [g.path, g.short]];
+  const top = g.top.map(([k, f]) => ({ p: pick(k), f }));
+  const topP = pick(g.topKey);
+  const tcard = ({ p, f }, n) => `<div class="mp-card"><a class="mp-img" href="${esc(p.url)}"${rel}><img src="${esc(p.img)}" alt="${esc(p.name)}" width="400" height="470" loading="${n === 0 ? 'eager' : 'lazy'}" decoding="async"></a><div class="mp-body"><span class="mp-rank">#${n + 1} · ${esc(P[p.partner].name)}</span><b>${esc(p.name)}</b><span class="price">${money(p.price)}</span><span class="mp-for">Gift for: ${esc(f)}</span><a class="btn btn-sm" href="${esc(p.url)}"${rel}>View at ${esc(P[p.partner].name)}</a></div></div>`;
+  const gcard = ([k, f]) => { const p = pick(k); return `<article class="card" data-brand="${p.partner}"><a class="card-img" href="${esc(p.url)}"${rel} tabindex="-1" aria-hidden="true"><img src="${esc(p.img)}" alt="${esc(p.name)}" width="400" height="470" loading="lazy" decoding="async"></a><div class="card-copy"><p class="card-partner">${esc(P[p.partner].name)}</p><h3><a href="${esc(p.url)}"${rel}>${esc(p.name)}</a></h3><div><span class="price">${money(p.price)}</span></div><p class="mp-for">Gift for: ${esc(f)}</p><a class="btn btn-sm" href="${esc(p.url)}"${rel}>View at ${esc(P[p.partner].name)}</a></div></article>`; };
+  const seeCard = (id) => { const p = curated.find((c) => c.id === id); return `<article class="card" data-brand="${p.partner}"><a class="card-img" href="${esc(p.url)}"${rel} tabindex="-1" aria-hidden="true"><img src="${esc(p.img)}" alt="${esc(p.name)}" width="400" height="470" loading="lazy" decoding="async"></a><div class="card-copy"><p class="card-partner">${esc(P[p.partner].name)}</p><h3><a href="${esc(p.url)}"${rel}>${esc(p.name)}</a></h3><div><span class="price muted">See price</span></div><a class="btn btn-sm" href="${esc(p.url)}"${rel}>See price at ${esc(P[p.partner].name)}</a></div></article>`; };
+  const art = { '@type': 'Article', headline: g.title, description: g.description, image: topP.img, datePublished: g.published, dateModified: g.modified, author: { '@type': 'Person', name: 'Shaheen Arif', url: abs('/author/shaheen-arif/') }, publisher: { '@id': site.url + '/#org' }, mainEntityOfPage: abs(g.path) };
+  const css = `<style id="mp-style">.mp-disc{font-size:13px;color:var(--muted);margin:0 0 12px}.mp-disc a{color:var(--blue);text-decoration:underline}.mp-top{background:#f7faff;border-radius:18px;padding:20px;margin:0 0 30px}.mp-top h2{margin:0 0 14px;font-size:clamp(24px,3vw,32px)}.mp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mp-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden}.mp-img{display:block;aspect-ratio:4/4.7;background:#fafafa}.mp-img img{width:100%;height:100%;object-fit:cover}.mp-body{display:flex;flex-direction:column;gap:4px;padding:14px;font-size:14px;line-height:1.4}.mp-body b{font-size:15px}.mp-rank{font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.mp-for{font-size:12px;color:var(--muted);margin:0}.mp-body .btn,.card-copy .btn{align-self:flex-start;margin-top:8px}.mp-sub{font-size:13px;color:var(--muted);margin:-.4em 0 14px}.mp-bar{display:none}@media(max-width:900px){.mp-grid{grid-template-columns:1fr}.mp-card{flex-direction:row}.mp-img{flex:0 0 120px;aspect-ratio:auto}}@media(max-width:639px){body{padding-bottom:78px}.mp-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;align-items:center;justify-content:space-between;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px #1018281a;padding:10px 16px calc(10px + env(safe-area-inset-bottom))}.mp-bar-t{font-size:12px;line-height:1.35;min-width:0}.mp-bar-t b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mp-bar-t a{color:var(--blue);text-decoration:underline;font-size:11px}.mp-bar .btn{flex:none}}</style>`;
+  return head({ title: `${g.title} | ${site.name}`, description: g.description, canonical: g.path, image: topP.img, type: 'article', schema: [crumbSchema(list), art, faqSchema(g.faqs)] }).replace('</head>', css + '\n</head>') + header('') + `
+<main id="main">
+<header class="page-hero"><div class="wrap">${crumbs(list)}<span class="eyebrow">Black Friday &amp; holiday gifts</span><h1>${esc(g.title)}: Wigs &amp; Hair Care for Every Budget</h1><p class="lead">${esc(g.quick)}</p><div class="byline"><span>By <a href="/author/shaheen-arif/" rel="author">Shaheen Arif</a></span><span>Updated <time datetime="${g.modified}">November 2, 2026</time></span></div></div></header>
+<div class="wrap article" style="grid-template-columns:minmax(0,1fr)">
+  <article class="prose" style="max-width:none">
+    <p class="mp-disc">Affiliate disclosure: we may earn a commission when you buy through our links, at no extra cost to you. <a href="/affiliate-disclosure.html">What’s an affiliate link?</a></p>
+    <section class="mp-top" aria-labelledby="mp-top-h"><h2 id="mp-top-h">Top 3 gifts</h2><div class="mp-grid">${top.map(tcard).join('')}</div></section>
+    <h2>Gifts by budget</h2>
+    ${g.groups.map((x) => `<h3>${esc(x.h)}</h3><p class="mp-sub">${esc(x.note)}</p><div class="grid">${x.items.map(gcard).join('')}</div>`).join('\n    ')}
+    <h3>More ideas: see price at the retailer</h3><p class="mp-sub">We do not have a listed price for these, so check the current price on the retailer’s page.</p><div class="grid">${g.seePrice.map(seeCard).join('')}</div>
+    <p class="note">${esc(g.prices)}</p>
+    ${g.chooseWig}
+    <h2>How we chose</h2><p>${esc(g.how)}</p>
+    <h2>Shipping before the holidays</h2><p>${esc(g.ship)}</p>
+    <section style="margin-top:40px">${faqBlock(g.faqs, 'Frequently asked questions').replace('class="center" ', '')}</section>
+  </article>
+</div>
+<div class="mp-bar" role="complementary" aria-label="Top gift"><div class="mp-bar-t"><b>Top gift: ${esc(topP.name.length > 38 ? topP.name.slice(0, 36) + '…' : topP.name)} · ${money(topP.price)}</b><a href="/affiliate-disclosure.html">What’s an affiliate link?</a></div><a class="btn btn-sm" href="${esc(topP.url)}"${rel}>View at ${esc(P[topP.partner].name)}</a></div>
+</main>` + footer();
+}
+
 // ---------- write ----------
 fs.mkdirSync(path.join(ROOT, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'src/site.css'), path.join(ROOT, 'assets/site.css'));
@@ -430,6 +465,7 @@ for (const b of data.partners) write(`brands/${b.id}.html`, brandPage(b));
 for (const p of curated) write(`products/${p.id}.html`, productPage(p));
 write('guides/index.html', guidesIndex());
 for (const g of guides) write(`guides/${g.slug}.html`, guidePage(g));
+write(holidayWig.file, holidayPage());
 const sp = pages(site); for (const pg of sp) write(pg.file, simple(pg));
 write('404.html', head({ title: `Page not found | ${site.name}`, description: 'Page not found.', canonical: '/404.html', noindex: true }) + header() + `<main id="main"><section class="section"><div class="wrap center" style="max-width:640px"><span class="eyebrow">404</span><h1>Let's find you <em>something better</em></h1><p class="lead" style="margin:0 auto 26px">That page has moved or doesn't exist.</p><ul class="pill-nav" style="justify-content:center"><li><a href="/">Home</a></li><li><a href="/#the-edit">The Edit</a></li><li><a href="/collections/glueless-wigs.html">Glueless wigs</a></li><li><a href="/guides/">Guides</a></li></ul></div></section></main>` + footer());
 
@@ -440,10 +476,10 @@ const searchIndex = [
   ...all.map((p) => ({ t: p.name, s: `${P[p.partner].name}${p.price ? ' · ' + money(p.price) : ''}`, u: p.kind === 'curated' ? p.page : p.url, k: `${p.category || ''} ${(p.tags || []).join(' ')}`, i: p.img })),
 ];
 write('search.json', JSON.stringify(searchIndex));
-const urls = [['/', '1.0', 'daily'], ['/brands/', '0.8', 'weekly'], ['/guides/', '0.8', 'weekly'], ...collections.map((c) => [`/collections/${c.slug}.html`, '0.9', 'weekly']), ...data.partners.map((b) => [`/brands/${b.id}.html`, '0.8', 'weekly']), ...curated.map((p) => [p.page, '0.7', 'weekly']), ...guides.map((g) => [g.path, '0.7', 'monthly']), ...sp.map((pg) => ['/' + pg.file, '0.3', 'yearly'])];
+const urls = [['/', '1.0', 'daily'], ['/brands/', '0.8', 'weekly'], ['/guides/', '0.8', 'weekly'], ...collections.map((c) => [`/collections/${c.slug}.html`, '0.9', 'weekly']), ...data.partners.map((b) => [`/brands/${b.id}.html`, '0.8', 'weekly']), ...curated.map((p) => [p.page, '0.7', 'weekly']), ...guides.map((g) => [g.path, '0.7', 'monthly']), [holidayWig.path, '0.8', 'weekly'], ...sp.map((pg) => ['/' + pg.file, '0.3', 'yearly'])];
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(([u, pr, cf]) => `  <url><loc>${abs(u)}</loc><lastmod>${V}</lastmod><changefreq>${cf}</changefreq><priority>${pr}</priority></url>`).join('\n')}\n</urlset>\n`);
 write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /*?utm_*\nDisallow: /*?fbclid=*\n\n# AI answer engines welcome\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
-write('llms.txt', `# ${site.name}\n\n> ${site.description}\n\nIndependent affiliate edit; products are sold by the official brand stores.\n\n## Guides\n${guides.map((g) => `- [${g.title}](${abs(g.path)}): ${strip(g.quick)}`).join('\n')}\n\n## Collections\n${collections.map((c) => `- [${c.title}](${abs('/collections/' + c.slug + '.html')}): ${c.intro}`).join('\n')}\n\n## Brands\n${data.partners.map((b) => `- [${b.name}](${abs('/brands/' + b.id + '.html')}) (${b.domain}): ${b.tagline}`).join('\n')}\n`);
+write('llms.txt', `# ${site.name}\n\n> ${site.description}\n\nIndependent affiliate edit; products are sold by the official brand stores.\n\n## Guides\n${guides.map((g) => `- [${g.title}](${abs(g.path)}): ${strip(g.quick)}`).join('\n')}\n- [${holidayWig.title}](${abs(holidayWig.path)}): ${holidayWig.description}\n\n## Collections\n${collections.map((c) => `- [${c.title}](${abs('/collections/' + c.slug + '.html')}): ${c.intro}`).join('\n')}\n\n## Brands\n${data.partners.map((b) => `- [${b.name}](${abs('/brands/' + b.id + '.html')}) (${b.domain}): ${b.tagline}`).join('\n')}\n`);
 write('site.webmanifest', JSON.stringify({ name: site.name, short_name: 'hairstyle', start_url: '/', display: 'standalone', background_color: '#ffffff', theme_color: '#2563eb', icons: [{ src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' }, { src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }] }, null, 2));
 write('favicon.svg', mark.replace('class="brand-mark" ', 'xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', ''));
 console.log(`Built: home, ${collections.length} collections, ${data.partners.length + 1} brand pages, ${curated.length} products, ${guides.length + 1} guides, ${sp.length} pages · ${all.length} products total`);
